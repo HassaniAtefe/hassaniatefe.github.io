@@ -1,7 +1,7 @@
 <div class="contact">
   <ul class="contact__list list-reset">
     {% if site.data.settings.twitter %}
-      <li><a href="{{ site.data.settings.twitter }}"><i class="ion ion-logo-twitter"></i></a></li>
+      <li><a href="{{ site.data.settings.twitter }}" target="_blank"><i class="ion ion-logo-twitter"></i></a></li>
     {% else %} {% endif %}
 
     {% if site.data.settings.facebook %}
@@ -13,9 +13,16 @@
     {% else %} {% endif %}
   
     {% if site.data.settings.googlescholar %}
-      <li><a href="{{ site.data.settings.googlescholar }}"><i class="ion ion-ios-book"></i></a></li>
+      <li><a href="{{ site.data.settings.googlescholar }}" target="_blank"><i class="ion ion-ios-book"></i></a></li>
     {% else %} {% endif %}
 
+    {% if site.data.settings.github %}
+      <li><a href="{{ site.data.settings.github }}" target="_blank"><i class="ion ion-logo-github"></i></a></li>
+    {% else %} {% endif %}
+
+    {% if site.data.settings.linkedin %}
+      <li><a href="{{ site.data.settings.linkedin }}" target="_blank"><i class="ion ion-logo-linkedin"></i></a></li>
+    {% else %} {% endif %}
 
     {% if site.data.settings.instagram %}
       <li><a href="{{ site.data.settings.instagram }}"><i class="ion ion-logo-instagram"></i></a></li>
