@@ -5,8 +5,12 @@ permalink: /about/
 image: pic_about.jpeg
 ---
 
-Hi, my name is Alex Rodriguez. I like being at the center of events, being free and enjoying every moment. Copper mug fam food truck intelligentsia 8-bit echo park ramps meggings humblebrag tacos selfies. Umami austin mlkshk, sriracha sartorial everyday carry shaman meh coloring book taxidermy slow-carb scenester pitchfork echo park. Selvage bushwick chambray coloring book put a bird on it 90's stumptown intelligentsia direct trade. Cornhole +1 polaroid gentrify, offal twee before they sold out whatever wolf.
+Welcome to my website. I’m Atefe Hassani. My research is concentrated on biomedical signal/image analysis with more emphasis on the brain. From the theoretical point of view, I am passionate about the interdisciplinary field of Artificial Intelligence (AI) and healthcare, aiming to improve the entire medical imaging workflow, especially the brain with significant impact for clinical use.
 
+
+I was a visiting researcher in the Bio-Imaging lab, at Antwerp University, from 2021 to 2022, where my research was focused on signal processing using electrophysiological recordings in the hippocampus with and without stimulation of cholinergic neurons in the medial septum in rats with the aim of providing valuable information for the development of new therapeutic strategies in Alzheimer's Disease (AD).
+
+I obtained my master’s degree in Biomedical Engineering from Shahed University, Iran, and my B.Sc. degree in Electrical Engineering from the University of Zanjan, Iran, during which I obtained valuable experience and knowledge.
 ***
 
 #### Austin scenester...
