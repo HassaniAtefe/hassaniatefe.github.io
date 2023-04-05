@@ -13,10 +13,3 @@ I was a visiting researcher in the Bio-Imaging lab at Antwerp University, from 2
 I obtained my MSc degree in Biomedical Engineering from Shahed University, Iran, and my BSc degree in Electrical Engineering from the University of Zanjan, Iran, during which I obtained valuable experience and knowledge.
 
 
-<!-- #### Austin scenester...
-<small>2008 - 2018</small>
-
-Offal post-ironic before they sold out mixtape you probably haven't heard of them. Pinterest roof party umami everyday carry street art. Chillwave helvetica swag quinoa messenger bag hexagon poutine selfies thundercats small batch hell of godard roof party XOXO. Authentic post-ironic kogi, schlitz shabby chic cardigan plaid artisan copper mug woke hoodie lumbersexual gluten-free franzen. Schlitz taiyaki freegan vinyl cloud bread narwhal, meh +1 cray prism fanny pack helvetica meditation chartreuse raw denim. -->
-
-
-
