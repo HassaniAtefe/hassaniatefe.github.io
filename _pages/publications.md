@@ -10,7 +10,6 @@ Publications by categories in reversed chronological order.
 ***
 
 ![]({{site.baseurl}}/images/p1.jpg)
-*Backyard*
 
 ### 2023:
 
@@ -23,7 +22,7 @@ Alzheimer's disease (AD) is a neurodegenerative disorder with a rising socioecon
 
 ***
 
-### Lists
+### 2022
 
 #### Ordered list example:
 
@@ -53,7 +52,7 @@ Alzheimer's disease (AD) is a neurodegenerative disorder with a rising socioecon
 
 ***
 
-### Quotes
+### 2019
 
 > Coming together is a beginning; keeping together is progress; working together is success. — Edward Everett Hale
 
