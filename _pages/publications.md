@@ -9,18 +9,11 @@ Publications by categories in reversed chronological order.
 
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <td><img src="{{site.baseurl}}/images/p1.jpg" alt="Image"></td>
+    <td>Text description here</td>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td><img src="{{site.baseurl}}/images/p1.jpg" alt="Image 2"></td>
+    <td>More text description here</td>
   </tr>
 </table>
