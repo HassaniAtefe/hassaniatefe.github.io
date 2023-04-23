@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Publications
 permalink: /publications/
 image: pub_pic.jpg
