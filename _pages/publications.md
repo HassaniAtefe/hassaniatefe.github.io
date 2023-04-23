@@ -10,7 +10,7 @@ Publications by categories in reversed chronological order.
 ***
 
 ### 2023:
-![image]({{site.baseurl}}/images/p1.jpg){: style="float: left"}
+![image]({{site.baseurl}}/images/p1.png){: style="float: left"}
 
 Some text.
 
