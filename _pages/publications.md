@@ -9,7 +9,7 @@ Publications by categories in reversed chronological order.
 
 <table>
   <tr>
-    <td><img src="{{site.baseurl}}/images/p1.jpg" alt="Image"></td>
+    <td><img src="../images/p1.jpg" alt="Image"></td>
     <td>Text description here</td>
   </tr>
   <tr>
