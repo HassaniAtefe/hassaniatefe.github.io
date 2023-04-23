@@ -14,7 +14,7 @@ Publications by categories in reversed chronological order.
 
 Some text.
 
-<img src="{{site.baseurl}}/images/p1.jpg" alt= “” width="200" height="200">
+<!-- <img src="{{site.baseurl}}/images/p1.jpg" alt= “” width="200" height="200"> -->
 
 ![]({{site.baseurl}}/images/p1.jpg)
 
