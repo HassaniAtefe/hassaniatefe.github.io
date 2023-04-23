@@ -13,9 +13,9 @@ Publications by categories in reversed chronological order.
   <tr>
     <td><img src="../images/p1.png" alt="Image"></td>
     <td>
-		Towards Confidence-Aware Calibrated Recommendation 
-		Mohammadmehdi Naghiaei, Hossein A. Rahmani, Mohammad Aliannejadi, and Nasim Sonboli 
-		In Proceedings of the 31st ACM International Conference on Information & Knowledge Management, 2022
+		Title 
+		Names
+		Venues
 	</td>
   </tr>
   <tr>
