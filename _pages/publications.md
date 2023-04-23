@@ -13,7 +13,7 @@ Publications by categories in reversed chronological order.
 	<div class="row">
 		<div class="col col-12">
 			{% if site.posts.size > 0 %}
-				<h4 class="lates-title">Latest Posts</h4>
+				<h4 class="lates-title">Latest Publications</h4>
 			{% endif %}
 		</div>
 	</div>
