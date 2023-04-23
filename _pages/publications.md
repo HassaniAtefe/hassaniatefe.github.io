@@ -9,9 +9,10 @@ Publications by categories in reversed chronological order.
 
 ***
 
+### 2023:
+
 ![]({{site.baseurl}}/images/p1.jpg)
 
-### 2023:
 
 #### The impact of selective and non-selective medial septum stimulation on hippocampal neuronal oscillations: A study based on modeling and experiments
 
