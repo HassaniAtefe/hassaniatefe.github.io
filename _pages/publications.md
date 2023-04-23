@@ -10,6 +10,11 @@ Publications by categories in reversed chronological order.
 ***
 
 ### 2023:
+![image]({{site.baseurl}}/images/p1.jpg){: style="float: left"}
+
+Some text.
+
+<img src="{{site.baseurl}}/images/p1.jpg" alt= “” width="200" height="200">
 
 ![]({{site.baseurl}}/images/p1.jpg)
 
