@@ -12,7 +12,7 @@ Publications by categories in reversed chronological order.
 <table>
   <tr>
     <td><img src="../images/p1.png" alt="Image"></td>
-    <td>
+    <td class="fixed">
 		The impact of selective and non-selective medial septum stimulation on hippocampal neuronal oscillations: A study based on modeling and experiments 
 		Names
 		Venues
