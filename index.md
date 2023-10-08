@@ -5,7 +5,7 @@
 layout: home
 title: Atefe Hassani
 ---
-👋 Hi, I'm <b>3 Atefe Hassani]!
+👋 Hi, I'm <b>3 Atefe Hassani!
 
 🎓 Recent Biomedical Engineering Master's Graduate
 🎓 Advised by <a href="[https://faculty.washington.edu/ajko/](https://scholar.google.co.uk/citations?hl=en&user=EDmSL6cAAAAJ&view_op=list_works&sortby=pubdate)">Prof. Ali Motie Nasrabadi</a>
