@@ -5,7 +5,7 @@
 layout: home
 title: Atefe Hassani
 ---
-🎓 Recent Biomedical Engineering Master's Graduate at Shahed University, Iran.
+🎓 Recent Biomedical Engineering Master's Graduate at Shahed University, Tehran, Iran.
 
 🎓 Advised by <a href="[https://faculty.washington.edu/ajko/](https://scholar.google.co.uk/citations?hl=en&user=EDmSL6cAAAAJ&view_op=list_works&sortby=pubdate)">Prof. Ali Motie Nasrabadi</a>
 
