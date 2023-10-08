@@ -3,17 +3,18 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
-title: Amanda Swearngin
+title: Atefe Hassani
 ---
-I am a recent graduate with a Ph.D. in Computer Science at the University of Washington. I was 
-	advised by <a href="https://faculty.washington.edu/ajko/">Amy Ko</a> and 
-	<a href="https://homes.cs.washington.edu/~jfogarty/">James Fogarty</a>. I researched systems and interfaces for UX/UI designers that apply techniques from diverse areas including program analysis, synthesis, constraint solving, and machine learning.
+👋 Hi, I'm <b>3 Atefe Hassani]!
 
-Through this research, I created systems to help interface designers explore and adapt
-alternative and example interfaces, and analyze the usability of an interface without needing to collect any data. For this research, I collaborated with industry researchers through internships with <a href="https://research.adobe.com/">Adobe Research</a> and 
-<a href="https://ai.google/research/">Google</a>, and have conducted over <b>100 interviews and study sessions</b> with interface designers. My research was supported by the <a href="https://www.nsfgrfp.org/">National Science Foundation Graduate Research Fellowship</a>.
+🎓 Recent Biomedical Engineering Master's Graduate
+🎓 Advised by <a href="[https://faculty.washington.edu/ajko/](https://scholar.google.co.uk/citations?hl=en&user=EDmSL6cAAAAJ&view_op=list_works&sortby=pubdate)">Prof. Ali Motie Nasrabadi</a>
 
-Previously, I spent <b>3 years</b> working as a <b>full-time software development engineer</b> at Microsoft, where I helped build a web interface framework for Microsoft Dynamics, and specialized in user interface layout, patterns, and visual regression testing. 
+🧠 Passionate about the intersection of Artificial Intelligence and Healthcare
+🧠 On a mission to enhance the medical imaging workflow, with a special focus on the brain
+🧠 Committed to leveraging machine intelligence for clinical applications
 
-I'm currently working at Apple as an AI and Accessibilty Researcher and Engineer. 
+💼 Always seeking opportunities to gain valuable experience and make a meaningful impact in the field of AI in healthcare.
+
+🌟 Let's collaborate and drive innovation in healthcare together! 🌟
 
