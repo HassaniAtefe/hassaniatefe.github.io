@@ -1,66 +1,66 @@
-- title: "Scout: Rapid Exploration of Interface Layout Alternatives through High-Level Design Constraints"
-  location: UW DUB Shorts Talks
-  city: Seattle, WA
-  date: 2020-04-15
-  url: https://dub.washington.edu/seminars/2020-04-15.html
-  recording: https://vimeo.com/410762398
-  slides: /assets/scout/AmandaSwearngin_Scout_DUB_Shorts_Slides.pdf
+# - title: "Scout: Rapid Exploration of Interface Layout Alternatives through High-Level Design Constraints"
+#   location: UW DUB Shorts Talks
+#   city: Seattle, WA
+#   date: 2020-04-15
+#   url: https://dub.washington.edu/seminars/2020-04-15.html
+#   recording: https://vimeo.com/410762398
+#   slides: /assets/scout/AmandaSwearngin_Scout_DUB_Shorts_Slides.pdf
 
-- title: "Expanding Interface Design Capabilities through Semantic and Data-Driven Analyses"
-  location: Apple Research
-  city: Seattle, WA
-  date: 2020-02-03
+# - title: "Expanding Interface Design Capabilities through Semantic and Data-Driven Analyses"
+#   location: Apple Research
+#   city: Seattle, WA
+#   date: 2020-02-03
 
-- title: "Expanding Interface Design Capabilities through Semantic and Data-Driven Analyses"
-  location: Snap Research
-  city: Seattle, WA
-  date: 2020-02-12
+# - title: "Expanding Interface Design Capabilities through Semantic and Data-Driven Analyses"
+#   location: Snap Research
+#   city: Seattle, WA
+#   date: 2020-02-12
 
-- title: "Modeling Mobile Interface Tappability Using Crowdsourcing and Deep Learning"
-  location: Conference on Human Factors in Computing Systems (CHI)
-  city: Glasgow, UK
-  date: 2019-05-08
-  recording: https://www.youtube.com/watch?v=Tq3X609yo44
-  slides: /assets/tapshoe/CHISlides.pdf
+# - title: "Modeling Mobile Interface Tappability Using Crowdsourcing and Deep Learning"
+#   location: Conference on Human Factors in Computing Systems (CHI)
+#   city: Glasgow, UK
+#   date: 2019-05-08
+#   recording: https://www.youtube.com/watch?v=Tq3X609yo44
+#   slides: /assets/tapshoe/CHISlides.pdf
 
-- title: "Scout: Mixed-Initiative Exploration of Design Variations through High-Level Design Constraints"
-  location: UW Affiliates Research day
-  city: Seattle, WA
-  date: 2018-11-12
-  url: https://www.cs.washington.edu/industrial_affiliates/meetings/2018/meeting/talks#3-305
+# - title: "Scout: Mixed-Initiative Exploration of Design Variations through High-Level Design Constraints"
+#   location: UW Affiliates Research day
+#   city: Seattle, WA
+#   date: 2018-11-12
+#   url: https://www.cs.washington.edu/industrial_affiliates/meetings/2018/meeting/talks#3-305
 
-- title: "Reverse Engineering User Interface Structure to Enable Access and Design Reuse"
-  location: Human-Computer Interaction Seminar, Berkeley Institute of Design
-  city: Berkeley, CA
-  date: 2018-09-12
-  url: http://schedule.bid-seminar.com/seminars/11
+# - title: "Reverse Engineering User Interface Structure to Enable Access and Design Reuse"
+#   location: Human-Computer Interaction Seminar, Berkeley Institute of Design
+#   city: Berkeley, CA
+#   date: 2018-09-12
+#   url: http://schedule.bid-seminar.com/seminars/11
 
-- title: "Scout: Mixed-Initiative Exploration of Design Variations through High-Level Design Constraints"
-  location: Pacific Northwest Programming Languages Workshop
-  city: Redmond, WA
-  date: 2018-05-12
-  url: http://pnwplse.org/
-  recording: https://youtu.be/nWoLsMr_av8
+# - title: "Scout: Mixed-Initiative Exploration of Design Variations through High-Level Design Constraints"
+#   location: Pacific Northwest Programming Languages Workshop
+#   city: Redmond, WA
+#   date: 2018-05-12
+#   url: http://pnwplse.org/
+#   recording: https://youtu.be/nWoLsMr_av8
 
-- title: "Rewire: Interface Design Assistance from Examples"
-  location: Conference on Human Factors in Computing Systems (CHI)
-  city: Montreal, Canada
-  date: 2018-04-24
-  slides: /assets/rewire/CHISlides.pdf
+# - title: "Rewire: Interface Design Assistance from Examples"
+#   location: Conference on Human Factors in Computing Systems (CHI)
+#   city: Montreal, Canada
+#   date: 2018-04-24
+#   slides: /assets/rewire/CHISlides.pdf
 
-- title: "Genie: Input Retargeting on the Web through Command Reverse Engineering"
-  location: Conference on Human Factors in Computing Systems (CHI)
-  city: Denver, CO
-  date: 2017-05-08
-  slides: /assets/genie/CHISlides.pdf
+# - title: "Genie: Input Retargeting on the Web through Command Reverse Engineering"
+#   location: Conference on Human Factors in Computing Systems (CHI)
+#   city: Denver, CO
+#   date: 2017-05-08
+#   slides: /assets/genie/CHISlides.pdf
 
-- title: "Easing the Generation of Predictive Human Performance Models from Legacy Systems"
-  location: Conference on Human Factors in Computing Systems (CHI)
-  city: Austin, TX
-  date: 2012-05-08
+# - title: "Easing the Generation of Predictive Human Performance Models from Legacy Systems"
+#   location: Conference on Human Factors in Computing Systems (CHI)
+#   city: Austin, TX
+#   date: 2012-05-08
 
-- title: "An Update on COMET (Community Event-based Testing)"
-  location: TESTBEDS Workshop
-  city: Berlin, Germany
-  date: 2011-03-12
-  url: http://www.cs.umd.edu/~atif/testbeds/testbeds2011.htm
+# - title: "An Update on COMET (Community Event-based Testing)"
+#   location: TESTBEDS Workshop
+#   city: Berlin, Germany
+#   date: 2011-03-12
+#   url: http://www.cs.umd.edu/~atif/testbeds/testbeds2011.htm
