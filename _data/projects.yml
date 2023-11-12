@@ -37,165 +37,165 @@
     name: DUB Shorts Talk 
     url: https://vimeo.com/410762398
 
-- tap-shoe:
-  name: TapShoe
-  featured: true
-  url: /assets/tapshoe/AmandaSwearngin_YangLi_TapShoe_CHI2019.pdf 
-  caption: Tapping is an immensely important gesture in mobile interfaces, yet people still frequently are required
-    to learn which elements are tappable through trial and error. We created <b>TapShoe</b>, an approach for modeling 
-    the tappability of mobile interfaces at scale. We collected a crowdsourced dataset of over 20k tappability labels
-    and built a deep learning model to evaluate tappability automatically which interface designers can use to evaluate
-    this key aspect of usability without needing to collect any data. 
-  thumb: assets/tapshoe/TapShoe.png 
-  thumb_class: cover 
-  collaborators: 
-    - Yang Li
-  links:
-  - type: article
-    name: Google AI Blog
-    url: https://ai.googleblog.com/2019/04/using-deep-learning-to-improve.html
-  - type: article 
-    name: VentureBeat Article
-    url: https://venturebeat.com/2019/04/02/googles-ai-powered-app-usability-testing-promises-human-level-accuracy/
-  - type: paper
-    name: CHI Paper
-    url: /assets/tapshoe/AmandaSwearngin_YangLi_TapShoe_CHI2019.pdf
-  - type: video
-    name: CHI Video
-    url: https://youtu.be/4tEL2wh_Dh0
-  - type: talk
-    name: CHI Talk
-    url: https://www.youtube.com/watch?v=Tq3X609yo44
-  # - type: code
-  #   url: http://github.com/vega/vega-lite
-  # - type: demo
-  #   url: https://vega.github.io/editor/#/examples/vega-lite/overview_detail
+# - tap-shoe:
+#   name: TapShoe
+#   featured: true
+#   url: /assets/tapshoe/AmandaSwearngin_YangLi_TapShoe_CHI2019.pdf 
+#   caption: Tapping is an immensely important gesture in mobile interfaces, yet people still frequently are required
+#     to learn which elements are tappable through trial and error. We created <b>TapShoe</b>, an approach for modeling 
+#     the tappability of mobile interfaces at scale. We collected a crowdsourced dataset of over 20k tappability labels
+#     and built a deep learning model to evaluate tappability automatically which interface designers can use to evaluate
+#     this key aspect of usability without needing to collect any data. 
+#   thumb: assets/tapshoe/TapShoe.png 
+#   thumb_class: cover 
+#   collaborators: 
+#     - Yang Li
+#   links:
+#   - type: article
+#     name: Google AI Blog
+#     url: https://ai.googleblog.com/2019/04/using-deep-learning-to-improve.html
+#   - type: article 
+#     name: VentureBeat Article
+#     url: https://venturebeat.com/2019/04/02/googles-ai-powered-app-usability-testing-promises-human-level-accuracy/
+#   - type: paper
+#     name: CHI Paper
+#     url: /assets/tapshoe/AmandaSwearngin_YangLi_TapShoe_CHI2019.pdf
+#   - type: video
+#     name: CHI Video
+#     url: https://youtu.be/4tEL2wh_Dh0
+#   - type: talk
+#     name: CHI Talk
+#     url: https://www.youtube.com/watch?v=Tq3X609yo44
+#   # - type: code
+#   #   url: http://github.com/vega/vega-lite
+#   # - type: demo
+#   #   url: https://vega.github.io/editor/#/examples/vega-lite/overview_detail
 
-- rewire:
-  name: Rewire
-  featured: true
-  url: /assets/rewire/AmandaSwearngin_Rewire_CHI2018.pdf
-  caption: Interface designers frequently adapt screenshot examples into designs, yet, images are unstructured and difficult to edit. We
-    created <b>Rewire</b>, an interactive system that helps designers leverage example screenshots by automatically inferring a vector representation
-    of a screenshot where UI components have editble shape and style properties. We demonstrate that Rewire can help designers reconstruct 
-    and edit example designs more efficiently compared to a baseline tool. # in JSON.
-  thumb: assets/rewire/rewire.png
-  links:
-  - type: paper
-    name: CHI Paper
-    url: /assets/rewire/AmandaSwearngin_Rewire_CHI2018.pdf
-  - type: video
-    name: CHI Video
-    url: https://youtu.be/hxl_UPwlSgg
-  - type: video
-    name: CHI Preview 
-    url: https://www.youtube.com/watch?v=o2XbClhH9tc
-  - type: podcast
-    name: Design Discussions Podcast
-    url: https://anchor.fm/design-discuss/episodes/Automatic-interface-design-from-screenshots--Voice-interfaces-in-homes-and-Location-based-Cryptocurrency-Workshops-e4dpt9/a-ahi111
+# - rewire:
+#   name: Rewire
+#   featured: true
+#   url: /assets/rewire/AmandaSwearngin_Rewire_CHI2018.pdf
+#   caption: Interface designers frequently adapt screenshot examples into designs, yet, images are unstructured and difficult to edit. We
+#     created <b>Rewire</b>, an interactive system that helps designers leverage example screenshots by automatically inferring a vector representation
+#     of a screenshot where UI components have editble shape and style properties. We demonstrate that Rewire can help designers reconstruct 
+#     and edit example designs more efficiently compared to a baseline tool. # in JSON.
+#   thumb: assets/rewire/rewire.png
+#   links:
+#   - type: paper
+#     name: CHI Paper
+#     url: /assets/rewire/AmandaSwearngin_Rewire_CHI2018.pdf
+#   - type: video
+#     name: CHI Video
+#     url: https://youtu.be/hxl_UPwlSgg
+#   - type: video
+#     name: CHI Preview 
+#     url: https://www.youtube.com/watch?v=o2XbClhH9tc
+#   - type: podcast
+#     name: Design Discussions Podcast
+#     url: https://anchor.fm/design-discuss/episodes/Automatic-interface-design-from-screenshots--Voice-interfaces-in-homes-and-Location-based-Cryptocurrency-Workshops-e4dpt9/a-ahi111
 
-- genie:
-  name: Genie
-  featured: true
-  url: /assets/genie/AmandaSwearngin_CHI2017_camera_ready.pdf 
-  caption: Most web applications are designed as one-size-fits-all, despite considerable variation in people’s expertise, physical abilities, and other factors that impact interaction.
-    We created <b>Genie</b>, a system that reverse engineers an abstract model of the underlying commands in a web application, 
-    then enables interaction with that functionality through alternative interfaces and other input modalities (e.g., speech, keyboard, or command line input).
-  thumb: assets/genie/genie.png
-  links:
-  - type: article
-    name: Blog
-    url: https://medium.com/bits-and-behavior/genie-input-retargeting-on-the-web-through-command-reverse-engineering-f9c7a294b23f
-  - type: paper
-    name: CHI Paper
-    url: /assets/genie/AmandaSwearngin_CHI2017_camera_ready.pdf 
-  - type: video
-    name: CHI Video
-    url: https://youtu.be/mQlr1kkitF8
-  - type: code
-    name: Code
-    url: https://github.com/amaswea/genie
-  # - type: demo
-  #   url: https://vega.github.io/editor/#/examples/vega-lite/overview_detail
+# - genie:
+#   name: Genie
+#   featured: true
+#   url: /assets/genie/AmandaSwearngin_CHI2017_camera_ready.pdf 
+#   caption: Most web applications are designed as one-size-fits-all, despite considerable variation in people’s expertise, physical abilities, and other factors that impact interaction.
+#     We created <b>Genie</b>, a system that reverse engineers an abstract model of the underlying commands in a web application, 
+#     then enables interaction with that functionality through alternative interfaces and other input modalities (e.g., speech, keyboard, or command line input).
+#   thumb: assets/genie/genie.png
+#   links:
+#   - type: article
+#     name: Blog
+#     url: https://medium.com/bits-and-behavior/genie-input-retargeting-on-the-web-through-command-reverse-engineering-f9c7a294b23f
+#   - type: paper
+#     name: CHI Paper
+#     url: /assets/genie/AmandaSwearngin_CHI2017_camera_ready.pdf 
+#   - type: video
+#     name: CHI Video
+#     url: https://youtu.be/mQlr1kkitF8
+#   - type: code
+#     name: Code
+#     url: https://github.com/amaswea/genie
+#   # - type: demo
+#   #   url: https://vega.github.io/editor/#/examples/vega-lite/overview_detail
 
-- cogtool-helper:
-  name: Cogtool-Helper
-  url: /assets/cogtool/AmandaSwearngin_CHI2012.pdf 
-  caption: Interface designers use human performance models to compare designs to legacy systems or competitors' interfaces, yet 
-    these models require manual creation of storyboards in human performance modeling tools (i.e., CogTool). We created a system to automatically generate storyboards and predictive models for desktop interfaces to help UI 
-    designers estimate human task performance (CHI 2012), and detect human performance regressions in interfaces (ICSE 2013). # in JSON.
-  thumb: assets/cogtool/cogtoolhelper.png
-  featured: true
-  links:
-  - type: article
-    name: Article
-    url: https://cogtool.wordpress.com/human-performance-regression-testing/
-  - type: paper
-    name: CHI 2012 Paper
-    url: /assets/cogtool/AmandaSwearngin_CHI2012.pdf 
-  - type: paper
-    name: ICSE 2013 Paper
-    url: /assets/cogtool/AmandaSwearngin_ICSE2013.pdf 
+# - cogtool-helper:
+#   name: Cogtool-Helper
+#   url: /assets/cogtool/AmandaSwearngin_CHI2012.pdf 
+#   caption: Interface designers use human performance models to compare designs to legacy systems or competitors' interfaces, yet 
+#     these models require manual creation of storyboards in human performance modeling tools (i.e., CogTool). We created a system to automatically generate storyboards and predictive models for desktop interfaces to help UI 
+#     designers estimate human task performance (CHI 2012), and detect human performance regressions in interfaces (ICSE 2013). # in JSON.
+#   thumb: assets/cogtool/cogtoolhelper.png
+#   featured: true
+#   links:
+#   - type: article
+#     name: Article
+#     url: https://cogtool.wordpress.com/human-performance-regression-testing/
+#   - type: paper
+#     name: CHI 2012 Paper
+#     url: /assets/cogtool/AmandaSwearngin_CHI2012.pdf 
+#   - type: paper
+#     name: ICSE 2013 Paper
+#     url: /assets/cogtool/AmandaSwearngin_ICSE2013.pdf 
 
-- evoweb: 
-  name: EvoWeb
-  caption: I conducted interviews with web users, and developed an algorithm and a web plugin to detect change in web applications over time and 
-    and highlight them to help people see what has changed since they last visited a webpage. This was done as part of a class project
-    for INSC 570 - Research Design. 
-  url: /assets/evoweb/EvowebPaper.pdf
-  thumb: assets/evoweb/evoweb.png
-  thumb_class: cover
-  awards: 
-    - Best Class Paper
-  collaborators: 
-    - Amy J. Ko 
-    - James Fogarty 
-  links: 
-    - type: paper 
-      name: Class Paper
-      url: /assets/evoweb/EvowebPaper.pdf
+# - evoweb: 
+#   name: EvoWeb
+#   caption: I conducted interviews with web users, and developed an algorithm and a web plugin to detect change in web applications over time and 
+#     and highlight them to help people see what has changed since they last visited a webpage. This was done as part of a class project
+#     for INSC 570 - Research Design. 
+#   url: /assets/evoweb/EvowebPaper.pdf
+#   thumb: assets/evoweb/evoweb.png
+#   thumb_class: cover
+#   awards: 
+#     - Best Class Paper
+#   collaborators: 
+#     - Amy J. Ko 
+#     - James Fogarty 
+#   links: 
+#     - type: paper 
+#       name: Class Paper
+#       url: /assets/evoweb/EvowebPaper.pdf
 
-- mashups: 
-  name: Mashup Versioning
-  caption: End users with little software background develop software like spreadsheets, web mashups, and macros. We investigated whether versioning capabilities could help end users develop, understand, and reuse web mashups. Our results showed that 
-    versioning allowed mashup creators to perform mashup creation tasks more correctly in less time than users without versioning, while also improving reusability. 
-  url: /assets/mashups/Kuttal_ISEUD2011.pdf
-  thumb: assets/mashups/mashups.png
-  thumb_class: cover
-  collaborators: 
-    - Sandeep Kaur Kuttal 
-    - Anita Sarma
-    - Gregg Rothermel 
-  links: 
-    - type: paper 
-      name: IS-EUD Paper
-      url: /assets/mashups/Kuttal_ISEUD2011.pdf
+# - mashups: 
+#   name: Mashup Versioning
+#   caption: End users with little software background develop software like spreadsheets, web mashups, and macros. We investigated whether versioning capabilities could help end users develop, understand, and reuse web mashups. Our results showed that 
+#     versioning allowed mashup creators to perform mashup creation tasks more correctly in less time than users without versioning, while also improving reusability. 
+#   url: /assets/mashups/Kuttal_ISEUD2011.pdf
+#   thumb: assets/mashups/mashups.png
+#   thumb_class: cover
+#   collaborators: 
+#     - Sandeep Kaur Kuttal 
+#     - Anita Sarma
+#     - Gregg Rothermel 
+#   links: 
+#     - type: paper 
+#       name: IS-EUD Paper
+#       url: /assets/mashups/Kuttal_ISEUD2011.pdf
 
-- set: 
-  name: SET Solver
-  caption: We created a reformulation strategy for solving multi-dimensional constraint satisfaction problems (CSPs), 
-    through the use of the game of SET as an illustration. We also built a basic constraint solver to find all solutions
-    of an instance of the game of SET, and deployed it in a web interface for playing SET that provided automatic hints. 
-  thumb: assets/set/set-constraints.png 
-  url: /assets/set/AmandaSwearngin_SARA2011.pdf
-  collaborators: 
-    - Berthe Choueiry 
-    - Eugene C. Freuder 
-  links: 
-    - type: paper 
-      name: SARA Paper 
-      url: /assets/set/AmandaSwearngin_SARA2011.pdf
+# - set: 
+#   name: SET Solver
+#   caption: We created a reformulation strategy for solving multi-dimensional constraint satisfaction problems (CSPs), 
+#     through the use of the game of SET as an illustration. We also built a basic constraint solver to find all solutions
+#     of an instance of the game of SET, and deployed it in a web interface for playing SET that provided automatic hints. 
+#   thumb: assets/set/set-constraints.png 
+#   url: /assets/set/AmandaSwearngin_SARA2011.pdf
+#   collaborators: 
+#     - Berthe Choueiry 
+#     - Eugene C. Freuder 
+#   links: 
+#     - type: paper 
+#       name: SARA Paper 
+#       url: /assets/set/AmandaSwearngin_SARA2011.pdf
 
 
-- pythia: 
-  name: Pythia
-  caption: We created a web application to explore course grading and evaluation histories for courses at the University of Washington (Javascript, HTML, Python/Django, D3.js), 
-    as part of a course project for CSE 510 - Human Computer Interaction. 
-  thumb: assets/pythia/pythia.png 
-  url: https://github.com/amaswea/pythia
-  links: 
-    - type: code 
-      name: Code
-      url: https://github.com/amaswea/pythia
+# - pythia: 
+#   name: Pythia
+#   caption: We created a web application to explore course grading and evaluation histories for courses at the University of Washington (Javascript, HTML, Python/Django, D3.js), 
+#     as part of a course project for CSE 510 - Human Computer Interaction. 
+#   thumb: assets/pythia/pythia.png 
+#   url: https://github.com/amaswea/pythia
+#   links: 
+#     - type: code 
+#       name: Code
+#       url: https://github.com/amaswea/pythia
 
 
