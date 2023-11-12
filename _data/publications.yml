@@ -1,14 +1,11 @@
-- title: "Never-ending learning of User Interfaces"
+- title: "Gender Differences in EEG Responses to Color and Black-White Images: Implications for Neuromarketing Strategies"
   year: 2023
   authors: 
-    - Jason Wu 
-    - Rebecca Krosnick
-    - Eldon Schoop
-    - <b>Amanda Swearngin</b>
-    - Jeffrey P. Bigham    
-    - Jeffrey Nichols
-  venue: UIST 2023
-  pdf: /assets/nel/Wu_NEL_UIST_2023.pdf 
+    - <b>Atefe Hassani</b>
+    - Amin Hekmatmanesh
+    - Ali Motie Nasrabadi
+  venue: IEEE Access 2023
+  pdf: https://ieeexplore.ieee.org/document/10230236?denied=
   
 - title: "Screen Correspondence: Mapping Interchangeable Elements between UIs"
   year: 2022
