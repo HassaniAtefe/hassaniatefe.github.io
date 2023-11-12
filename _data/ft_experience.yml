@@ -1,24 +1,24 @@
 
-- organization: Microsoft Corporation
-  title: Software Development Engineer II, Software Development Engineer in Test (SDET)
-  date: 2012 - 2015
-  location: Fargo, ND
-  caption: "I primarily designed, developed, and tested web client framework features for Dynamics AX, Microsoft’s cloud-based ERP, 
-    and was the primary developer for client <b>layout and UX patterns</b>. Additionally, I developed a <b>visual regression testing framework</b>
-    to validate the product across browsers and environments, and integrated it into the build system."
-  logo: microsoft-trimmed.png
+# - organization: Microsoft Corporation
+#   title: Software Development Engineer II, Software Development Engineer in Test (SDET)
+#   date: 2012 - 2015
+#   location: Fargo, ND
+#   caption: "I primarily designed, developed, and tested web client framework features for Dynamics AX, Microsoft’s cloud-based ERP, 
+#     and was the primary developer for client <b>layout and UX patterns</b>. Additionally, I developed a <b>visual regression testing framework</b>
+#     to validate the product across browsers and environments, and integrated it into the build system."
+#   logo: microsoft-trimmed.png
 
-- organization: Cerner Corporation
-  title: Software Engineering Intern
-  date: 2010
-  location: Kansas City, MO
-  caption: "I conducted performance analyses and implemented C++ performance improvements that were put into production in Cerner's core application (PowerChart), and conducted static analysis runs to improve code quality. "
-  logo: cerner.png
+# - organization: Cerner Corporation
+#   title: Software Engineering Intern
+#   date: 2010
+#   location: Kansas City, MO
+#   caption: "I conducted performance analyses and implemented C++ performance improvements that were put into production in Cerner's core application (PowerChart), and conducted static analysis runs to improve code quality. "
+#   logo: cerner.png
 
-- organization: Cerner Corporation
-  title: Software Engineering Intern
-  date: 2009
-  location: Kansas City, MO
-  caption: "I designed a UI and built an interactive patient summary web app for the iPhone using JavaScript, CSS, and HTML. "
-  logo: cerner.png
+# - organization: Cerner Corporation
+#   title: Software Engineering Intern
+#   date: 2009
+#   location: Kansas City, MO
+#   caption: "I designed a UI and built an interactive patient summary web app for the iPhone using JavaScript, CSS, and HTML. "
+#   logo: cerner.png
 
