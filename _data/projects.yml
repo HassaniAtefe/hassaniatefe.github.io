@@ -8,7 +8,7 @@
   collaborators:
     - Atefe Hassani
   links:
-  - type: report
+  - type: code
     name: GitHub
     url: https://github.com/HassaniAtefe/ai-or-not
   # - type: video
@@ -31,21 +31,17 @@
   #   name: DUB Shorts Talk 
   #   url: https://vimeo.com/410762398
 
-# - tap-shoe:
-#   name: TapShoe
-#   featured: true
+- Federated Learning:
+  name: Federated Learning
+  featured: true
 #   url: /assets/tapshoe/AmandaSwearngin_YangLi_TapShoe_CHI2019.pdf 
-#   caption: Tapping is an immensely important gesture in mobile interfaces, yet people still frequently are required
-#     to learn which elements are tappable through trial and error. We created <b>TapShoe</b>, an approach for modeling 
-#     the tappability of mobile interfaces at scale. We collected a crowdsourced dataset of over 20k tappability labels
-#     and built a deep learning model to evaluate tappability automatically which interface designers can use to evaluate
-#     this key aspect of usability without needing to collect any data. 
+  caption:Federated learning is a decentralized machine learning approach where model training occurs across multiple edge devices or servers holding local data samples. Instead of sending raw data to a central server, model updates are computed locally and then aggregated, preserving data privacy. This collaborative learning paradigm enables the creation of a global model without direct data sharing, making it particularly advantageous in privacy-sensitive applications and distributed environments. 
 #   thumb: assets/tapshoe/TapShoe.png 
 #   thumb_class: cover 
 #   collaborators: 
 #     - Yang Li
-#   links:
-#   - type: article
+  # links:
+  # - type: article
 #     name: Google AI Blog
 #     url: https://ai.googleblog.com/2019/04/using-deep-learning-to-improve.html
 #   - type: article 
