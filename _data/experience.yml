@@ -1,67 +1,67 @@
-- organization: Apple
-  title: Research Engineer/Scientist
-  date: Since 2020 
-  location: Seattle, WA
-  caption: I develop tools and systems that apply machine learning to improve accessibility across Apple products. 
+# - organization: Apple
+#   title: Research Engineer/Scientist
+#   date: Since 2020 
+#   location: Seattle, WA
+#   caption: I develop tools and systems that apply machine learning to improve accessibility across Apple products. 
 
-- organization: Code & Cognition Lab, Fogies Lab, University of Washington
-  title: Graduate Student Researcher
-  date: 2015 - 2019 
-  location: Seattle, WA
-  advisors: James Fogarty, Amy Ko
-  caption: I designed and developed 4 systems applying constraint solving, data-driven design, and machine learning to aid UI/UX designers
-    in their use of examples and alternatives and conducting usability evaluations within interactive design tools, while collaborating with industry companies (i.e., Adobe, 
-    Google). 
-  logo: washington.png
+# - organization: Code & Cognition Lab, Fogies Lab, University of Washington
+#   title: Graduate Student Researcher
+#   date: 2015 - 2019 
+#   location: Seattle, WA
+#   advisors: James Fogarty, Amy Ko
+#   caption: I designed and developed 4 systems applying constraint solving, data-driven design, and machine learning to aid UI/UX designers
+#     in their use of examples and alternatives and conducting usability evaluations within interactive design tools, while collaborating with industry companies (i.e., Adobe, 
+#     Google). 
+#   logo: washington.png
 
-- organization: Microsoft Research
-  title: Research Intern (Ideas Group)
-  date: 2019
-  location: Redmond, WA
-  mentors: Shamsi Iqbal
-  caption: I conducted a company-wide survey on information capture from mobile devices, and collaborated with <b>two 
-    product teams</b> to develop a cross-device system (i.e. mobile and desktop) for capturing and linking document-related information (e.g., 
-    photos, bookmarks). 
-  logo: microsoft-trimmed.png
+# - organization: Microsoft Research
+#   title: Research Intern (Ideas Group)
+#   date: 2019
+#   location: Redmond, WA
+#   mentors: Shamsi Iqbal
+#   caption: I conducted a company-wide survey on information capture from mobile devices, and collaborated with <b>two 
+#     product teams</b> to develop a cross-device system (i.e. mobile and desktop) for capturing and linking document-related information (e.g., 
+#     photos, bookmarks). 
+#   logo: microsoft-trimmed.png
 
-- organization: Google, Inc.
-  title: Student Researcher & Intern (Reflection Group, Google Research)
-  date: 2018
-  location: Mountain View, CA
-  mentors: Yang Li
-  caption: I developed a crowdsourcing interface, and collected a dataset of over 20k labels through Mechanical Turk, 
-    and constructed a <b>deep neural network model</b> (Tensorflow) to automatically predict the tappability of mobile interfaces to help designers evaluate tappability
-    of their interfaces without needing to collect any data. 
-  logo: google.png
-
-- organization: Adobe Research
-  title: Research Intern
-  date: 2016, 2017 
-  location: Seattle, WA
-  mentors: Mira Dontcheva, Wilmot Li, Morgan Dixon, Joel Brandt 
-  caption: I created <b>Rewire</b>, an interactive system helping designers leverage example screenshots by automatically inferring a 
-    vector representation with editable shape and style properties, including 3 novel design assistance modes, and evaluated Rewire with 16 
-    interface designers. 
-  logo: adobe.png
+# - organization: Google, Inc.
+#   title: Student Researcher & Intern (Reflection Group, Google Research)
+#   date: 2018
+#   location: Mountain View, CA
+#   mentors: Yang Li
+#   caption: I developed a crowdsourcing interface, and collected a dataset of over 20k labels through Mechanical Turk, 
+#     and constructed a <b>deep neural network model</b> (Tensorflow) to automatically predict the tappability of mobile interfaces to help designers evaluate tappability
+#     of their interfaces without needing to collect any data. 
+#   logo: google.png
 
 # - organization: Adobe Research
 #   title: Research Intern
-#   date: 2016
-#   location: San Francisco, CA
-#   mentors: 
-#     - Joel Brandt
-#     - Mira Dontcheva
-#     - Morgan Dixon
-#   caption: "Developed <b>TapShoe</b> to predict"
-#   logo: adobe.jpg
+#   date: 2016, 2017 
+#   location: Seattle, WA
+#   mentors: Mira Dontcheva, Wilmot Li, Morgan Dixon, Joel Brandt 
+#   caption: I created <b>Rewire</b>, an interactive system helping designers leverage example screenshots by automatically inferring a 
+#     vector representation with editable shape and style properties, including 3 novel design assistance modes, and evaluated Rewire with 16 
+#     interface designers. 
+#   logo: adobe.png
 
-- organization: University of Nebraska-Lincoln 
-  title: Graduate Research Assistant
-  date: 2010 - 2012
-  location: Lincoln, NE
-  advisors: Myra B. Cohen 
-  caption: I designed and implemented <b>CogTool-Helper</b>, which uses UI testing frameworks to 
-    automatically create storyboards for predictive human performance modeling of user interfaces, 
-    to help designers evaluate human performance and detect human performance regressions in interfaces. 
-  logo: nebraska.png
+# # - organization: Adobe Research
+# #   title: Research Intern
+# #   date: 2016
+# #   location: San Francisco, CA
+# #   mentors: 
+# #     - Joel Brandt
+# #     - Mira Dontcheva
+# #     - Morgan Dixon
+# #   caption: "Developed <b>TapShoe</b> to predict"
+# #   logo: adobe.jpg
+
+# - organization: University of Nebraska-Lincoln 
+#   title: Graduate Research Assistant
+#   date: 2010 - 2012
+#   location: Lincoln, NE
+#   advisors: Myra B. Cohen 
+#   caption: I designed and implemented <b>CogTool-Helper</b>, which uses UI testing frameworks to 
+#     automatically create storyboards for predictive human performance modeling of user interfaces, 
+#     to help designers evaluate human performance and detect human performance regressions in interfaces. 
+#   logo: nebraska.png
 
