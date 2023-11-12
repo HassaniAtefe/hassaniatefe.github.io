@@ -4,248 +4,181 @@
     - <b>Atefe Hassani</b>
     - Amin Hekmatmanesh
     - Ali Motie Nasrabadi
-  venue: IEEE Access 2023
+  venue: IEEE Access
   pdf: https://ieeexplore.ieee.org/document/10230236?denied=
+  doi: 10.1109/ACCESS.2023.3308810
+  slides:
+  video:
   
-- title: "Screen Correspondence: Mapping Interchangeable Elements between UIs"
+- title: "The impact of selective and non-selective medial septum stimulation on hippocampal neuronal oscillations: A study based on modeling and experiments"
+  year: 2023
+  authors: 
+    - Nima Salimi-Nezhad
+    - Stephan Missault
+    - Anaïs Notario-Reinoso
+    - <b>Atefe Hassani</b>
+    - Mahmood Amiri
+    - Georgios A Keliris
+  venue: Neurobiology of disease
+  pdf: https://www.sciencedirect.com/science/article/pii/S0969996123000669
+  doi: 10.1016/j.nbd.2023.106052
+  slides:
+  video:
+  
+- title: "Discrimination of Customers Decision-Making in a Like/Dislike Shopping Activity Based on Genders: A Neuromarketing Study"
   year: 2022
   authors: 
-    - Jason Wu 
-    - <b>Amanda Swearngin</b>
-    - Xiaoyi Zhang 
-    - Jeffrey Nichols
-    - Jeffrey P. Bigam
-  venue: Arxiv 2022
-  pdf: /assets/screen_cor/Wu_SC_Arxiv_2022.pdf 
+     - <b>Atefe Hassani</b>
+    - Amin Hekmatmanesh
+    - Ali Motie Nasrabadi
+  venue: IEEE Access
+  pdf: https://ieeexplore.ieee.org/document/9867935?denied=
+  doi: 10.1109/ACCESS.2022.3201488
+  slides:
+  video:
   
-- title: "Extracting Replayable Interactions from Videos of Mobile App Usage"
-  year: 2022
-  authors: 
-    - Jieshan Chen
-    - <b>Amanda Swearngin</b>
-    - Jason Wu 
-    - Titus Barik
-    - Jeffrey Nichols
-    - Xiaoyi Zhang 
-  venue: Arxiv 2022
-  pdf: /assets/replay/Chen_Replay_Arxiv_2022.pdf 
-  
-- title: "Towards Complete Icon Labeling in Mobile Applications"
-  year: 2022
-  authors: 
-    - Jieshan Chen
-    - <b>Amanda Swearngin</b>
-    - Jason Wu 
-    - Titus Barik
-    - Jeffrey Nichols
-    - Xiaoyi Zhang 
-  venue: CHI 2022
-  pdf: /assets/icons/Chen_Icons_CHI_2022.pdf 
-  
-- title: "Understanding Screen Relationships from Screenshots of Smartphone Applications"
-  year: 2021
-  authors: 
-    - Shirin Feiz
-    - Jason Wu
-    - Xiaoyi Zhang
-    - <b>Amanda Swearngin</b>
-    - Titus Barik
-    - Jeffrey Nichols
-  venue: IUI 2022
-  pdf: /assets/ssim/Feiz_SSIM_2022.pdf 
-  
-- title: "Scraps: Enabling Contextual Mobile Capture, Contextualization, and Use of Document Resources"
-  year: 2021
-  authors: 
-    - <b>Amanda Swearngin</b>
-    - Shamsi Iqbal
-    - Victor Poznanski
-    - Marc Encarnacion 
-    - Paul N. Bennett
-    - Jaime Teevan
-  venue: CHI 2021
-  awards: Honorable Mention
-  pdf: /assets/scraps/Swearngin_Scraps_CHI_2021.pdf 
-  
-- title: "Screen Recognition: Creating Accessibility Metadata for Mobile Applications from Pixels"
-  year: 2021
-  authors:
-    - Xiaoyi Zhang
-    - Lilian de Greef
-    - <b>Amanda Swearngin</b>
-    - Samuel White
-    - Kyle Murray
-    - Lisa Yu
-    - Qi Shan
-    - Jeffrey Nichols
-    - Jason Wu
-    - Chris Fleizach
-    - Aaron Everitt
-    - Jeffrey P. Bigham 
-  venue: CHI 2021
-  # link:
-  awards: Best Paper
-  arxiv: 2101.04893
-
-- title: "Expanding Interface Design Capabilities through Semantic and Data-Driven Analyses"
-  year: 2020
-  authors:
-    - <b>Amanda Swearngin</b>
-  venue: UW Ph.D. Dissertation
-  # link:
-  pdf: /assets/diss/AmandaSwearngin_Dissertation_UW.pdf
-
-- title: "Scout: Rapid Exploration of Interface Layout Alternatives through High-Level Design Constraints"
-  year: 2020
-  authors:
-    - <b>Amanda Swearngin</b>
-    - Chenglong Wang
-    - Alannah Oleson
-    - James Fogarty
-    - Amy J. Ko
-  venue: CHI 2020
-  venue_url: https://chi2020.acm.org/
-  venue_location: Honolulu, Hawaii
-  # link:
-  pdf: /assets/scout/AmandaSwearngin_Scout_CHI2020.pdf 
-  # slides:
-  video: https://www.youtube.com/watch?v=y8pTC6FEsKc
-  doi: 10.1145/3313831.3376593
-  arxiv: 2001.05424
-  slides: /assets/scout/AmandaSWearngin_Scout_DUB_Shorts_Slides.pdf 
-  # short_doi
-
-- title: "Modeling Mobile Interface Tappability Using Crowdsourcing and Deep Learning"
+- title: "Improved PPG-based estimation of the blood pressure using latent space features"
   year: 2019
-  authors:
-    - <b>Amanda Swearngin</b>
-    - Yang Li
-  venue: CHI 2019
-  venue_url: https://chi2019.acm.org/
-  venue_location: Glasgow, UK
-  doi: 10.1145/3290605.3300305
-  short_doi: 10/db8c
-  video: https://youtu.be/4tEL2wh_Dh0
-  recording: https://www.youtube.com/watch?v=Tq3X609yo44
-  arxiv: 1902.11247
-  slides: /assets/tapshoe/CHISlides.pdf
+  authors: 
+    - <b>Atefe Hassani</b>
+    - Amir Hossein Foruzan
+  venue: Signal, Image and Video Processing
+  pdf: https://link.springer.com/article/10.1007/s11760-019-01460-1
+  doi: 10.1007/s11760-019-01460-1
+  slides:
+  video:
 
-  # link:
-  pdf: /assets/tapshoe/AmandaSwearngin_YangLi_TapShoe_CHI2019.pdf
-  # slides:
-  # video:
+# - title: "Modeling Mobile Interface Tappability Using Crowdsourcing and Deep Learning"
+#   year: 2019
+#   authors:
+#     - <b>Amanda Swearngin</b>
+#     - Yang Li
+#   venue: CHI 2019
+#   venue_url: https://chi2019.acm.org/
+#   venue_location: Glasgow, UK
+#   doi: 10.1145/3290605.3300305
+#   short_doi: 10/db8c
+#   video: https://youtu.be/4tEL2wh_Dh0
+#   recording: https://www.youtube.com/watch?v=Tq3X609yo44
+#   arxiv: 1902.11247
+#   slides: /assets/tapshoe/CHISlides.pdf
 
-  # doi:
-  # short_doi
+#   # link:
+#   pdf: /assets/tapshoe/AmandaSwearngin_YangLi_TapShoe_CHI2019.pdf
+#   # slides:
+#   # video:
 
-- title: "Scout: Mixed-Initiative Exploration of Design Variations through High-Level Design Constraints"
-  year: 2018
-  authors:
-    - <b>Amanda Swearngin</b>
-    - Amy J. Ko
-    - James Fogarty
-  venue: UIST 2018 Demos
-  venue_url: http://uist.acm.org/uist2018/
-  venue_location: Berlin, Germany 
-  doi: 10.1145/3266037.3271626
-  short_doi: 10/db79 
-  video: https://www.youtube.com/watch?v=OCxXooY3aes
+#   # doi:
+#   # short_doi
 
-  # link:
-  pdf: /assets/scout/Swearngin_UIST18_Demo_Scout.pdf
+# - title: "Scout: Mixed-Initiative Exploration of Design Variations through High-Level Design Constraints"
+#   year: 2018
+#   authors:
+#     - <b>Amanda Swearngin</b>
+#     - Amy J. Ko
+#     - James Fogarty
+#   venue: UIST 2018 Demos
+#   venue_url: http://uist.acm.org/uist2018/
+#   venue_location: Berlin, Germany 
+#   doi: 10.1145/3266037.3271626
+#   short_doi: 10/db79 
+#   video: https://www.youtube.com/watch?v=OCxXooY3aes
 
-- title: "Rewire: Interface Design Assistance from Examples"
-  year: 2018
-  authors:
-    - <b>Amanda Swearngin</b>
-    - Wilmot Li
-    - Mira Dontcheva 
-    - Joel Brandt
-    - Morgan Dixon 
-    - Amy J. Ko
-  venue: CHI 2018
-  venue_url: https://chi2018.acm.org/
-  venue_location: Montreal, Canada
-  doi: 10.1145/3173574.3174078
-  short_doi: 10/db8b
-  video: https://youtu.be/hxl_UPwlSgg
-  slides: /assets/rewire/CHISlides.pdf
-  # link:
-  pdf: /assets/rewire/AmandaSwearngin_Rewire_CHI2018.pdf
-  # slides:
-  # video:
+#   # link:
+#   pdf: /assets/scout/Swearngin_UIST18_Demo_Scout.pdf
 
-  # doi:
-  # short_doi
+# - title: "Rewire: Interface Design Assistance from Examples"
+#   year: 2018
+#   authors:
+#     - <b>Amanda Swearngin</b>
+#     - Wilmot Li
+#     - Mira Dontcheva 
+#     - Joel Brandt
+#     - Morgan Dixon 
+#     - Amy J. Ko
+#   venue: CHI 2018
+#   venue_url: https://chi2018.acm.org/
+#   venue_location: Montreal, Canada
+#   doi: 10.1145/3173574.3174078
+#   short_doi: 10/db8b
+#   video: https://youtu.be/hxl_UPwlSgg
+#   slides: /assets/rewire/CHISlides.pdf
+#   # link:
+#   pdf: /assets/rewire/AmandaSwearngin_Rewire_CHI2018.pdf
+#   # slides:
+#   # video:
 
-- title: "Genie: Input Retargeting on the Web through Command Reverse Engineering"
-  year: 2017
-  authors:
-    - <b>Amanda Swearngin</b>
-    - Amy J. Ko
-    - James Fogarty 
-  venue: CHI 2017
-  venue_url: https://chi2017.acm.org/
-  venue_location: Denver, CO
-  doi: 10.1145/3025453.3025506
-  short_doi: 10/db8d
-  video: https://youtu.be/OCxXooY3aes
-  # link:
-  pdf: /assets/genie/AmandaSwearngin_CHI2017_camera_ready.pdf
-  slides: /assets/genie/CHISlides.pdf 
+#   # doi:
+#   # short_doi
+
+# - title: "Genie: Input Retargeting on the Web through Command Reverse Engineering"
+#   year: 2017
+#   authors:
+#     - <b>Amanda Swearngin</b>
+#     - Amy J. Ko
+#     - James Fogarty 
+#   venue: CHI 2017
+#   venue_url: https://chi2017.acm.org/
+#   venue_location: Denver, CO
+#   doi: 10.1145/3025453.3025506
+#   short_doi: 10/db8d
+#   video: https://youtu.be/OCxXooY3aes
+#   # link:
+#   pdf: /assets/genie/AmandaSwearngin_CHI2017_camera_ready.pdf
+#   slides: /assets/genie/CHISlides.pdf 
 
 
-- title: "Human Performance Regression Testing"
-  year: 2013
-  authors:
-    - <b>Amanda Swearngin</b>
-    - Myra B. Cohen 
-    - Bonnie E. John 
-    - Rachel K. E. Bellamy
-  venue: ICSE 2013 
-  venue_url: http://2013.icse-conferences.org/
-  venue_location: San Francisco, CA 
+# - title: "Human Performance Regression Testing"
+#   year: 2013
+#   authors:
+#     - <b>Amanda Swearngin</b>
+#     - Myra B. Cohen 
+#     - Bonnie E. John 
+#     - Rachel K. E. Bellamy
+#   venue: ICSE 2013 
+#   venue_url: http://2013.icse-conferences.org/
+#   venue_location: San Francisco, CA 
 
-  # link:
-  pdf: /assets/cogtool/AmandaSwearngin_ICSE2013.pdf
+#   # link:
+#   pdf: /assets/cogtool/AmandaSwearngin_ICSE2013.pdf
 
-- title: "Easing the Generation of Predictive Human Performance Models from Legacy Systems"
-  year: 2012
-  authors:
-    - <b>Amanda Swearngin</b>
-    - Myra B. Cohen 
-    - Bonnie E. John 
-    - Rachel K. E. Bellamy
-  venue: CHI 2012
-  venue_url: https://dl.acm.org/citation.cfm?id=2207676
-  venue_location: Austin, TX 
+# - title: "Easing the Generation of Predictive Human Performance Models from Legacy Systems"
+#   year: 2012
+#   authors:
+#     - <b>Amanda Swearngin</b>
+#     - Myra B. Cohen 
+#     - Bonnie E. John 
+#     - Rachel K. E. Bellamy
+#   venue: CHI 2012
+#   venue_url: https://dl.acm.org/citation.cfm?id=2207676
+#   venue_location: Austin, TX 
 
-  # link:
-  pdf: /assets/cogtool/AmandaSwearngin_CHI2012.pdf
+#   # link:
+#   pdf: /assets/cogtool/AmandaSwearngin_CHI2012.pdf
 
-- title: "Versioning for Mashups --- An Exploratory Study"
-  year: 2011
-  authors:
-    - Sandeep Kaur Kuttal
-    - Anita Sarma 
-    - <b>Amanda Swearngin</b>
-    - Gregg Rothermel 
-  venue: IS-EUD 2011
-  venue_url: https://iseud.net/2011/
-  venue_location: Torre Canne, Italy 
+# - title: "Versioning for Mashups --- An Exploratory Study"
+#   year: 2011
+#   authors:
+#     - Sandeep Kaur Kuttal
+#     - Anita Sarma 
+#     - <b>Amanda Swearngin</b>
+#     - Gregg Rothermel 
+#   venue: IS-EUD 2011
+#   venue_url: https://iseud.net/2011/
+#   venue_location: Torre Canne, Italy 
 
-  # link:
-  pdf: /assets/mashups/Kuttal_ISEUD2011.pdf
+#   # link:
+#   pdf: /assets/mashups/Kuttal_ISEUD2011.pdf
 
-- title: "A Reformulation Strategy for Multi-Dimensional CSPs: The Case Study of the SET Game"
-  year: 2011
-  authors:
-    - <b>Amanda Swearngin</b>
-    - Berthe Y. Choueiry
-    - Eugene C. Freuder 
-  venue: SARA 2011
-  # venue_url: http://2013.icse-conferences.org/
-  venue_location: Catalonia, Spain 
+# - title: "A Reformulation Strategy for Multi-Dimensional CSPs: The Case Study of the SET Game"
+#   year: 2011
+#   authors:
+#     - <b>Amanda Swearngin</b>
+#     - Berthe Y. Choueiry
+#     - Eugene C. Freuder 
+#   venue: SARA 2011
+#   # venue_url: http://2013.icse-conferences.org/
+#   venue_location: Catalonia, Spain 
 
-  # link:
-  pdf: /assets/set/AmandaSwearngin_SARA2011.pdf
+#   # link:
+#   pdf: /assets/set/AmandaSwearngin_SARA2011.pdf
