@@ -35,7 +35,7 @@
   name: Federated Learning
   featured: true
   url: https://oil-winter-a09.notion.site/Learning-about-federated-learning-all-recent-variants-70f04e0ce81444e4a810f9bac49f4f65?pvs=4
-    caption: Federated learning is a decentralized machine learning approach where model training occurs across multiple edge devices or servers holding local data samples. Instead of sending raw data to a central server, model updates are computed locally and then aggregated, preserving data privacy. This collaborative learning paradigm enables the creation of a global model without direct data sharing, making it particularly advantageous in privacy-sensitive applications and distributed environments. 
+  caption: Federated learning is a decentralized machine learning approach where model training occurs across multiple edge devices or servers holding local data samples. Instead of sending raw data to a central server, model updates are computed locally and then aggregated, preserving data privacy. This collaborative learning paradigm enables the creation of a global model without direct data sharing, making it particularly advantageous in privacy-sensitive applications and distributed environments. 
   thumb: assets/tapshoe/fed_img.png 
   thumb_class: cover 
   collaborators: 
