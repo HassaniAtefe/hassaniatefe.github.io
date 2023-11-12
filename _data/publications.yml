@@ -7,8 +7,8 @@
   venue: IEEE Access
   pdf: https://ieeexplore.ieee.org/document/10230236?denied=
   doi: 10.1109/ACCESS.2023.3308810
-  slides:
-  video:
+  # slides:
+  # video:
   
 - title: "The impact of selective and non-selective medial septum stimulation on hippocampal neuronal oscillations: A study based on modeling and experiments"
   year: 2023
@@ -22,8 +22,8 @@
   venue: Neurobiology of disease
   pdf: https://www.sciencedirect.com/science/article/pii/S0969996123000669
   doi: 10.1016/j.nbd.2023.106052
-  slides:
-  video:
+  # slides:
+  # video:
   
 - title: "Discrimination of Customers Decision-Making in a Like/Dislike Shopping Activity Based on Genders: A Neuromarketing Study"
   year: 2022
@@ -34,8 +34,8 @@
   venue: IEEE Access
   pdf: https://ieeexplore.ieee.org/document/9867935?denied=
   doi: 10.1109/ACCESS.2022.3201488
-  slides:
-  video:
+  # slides:
+  # video:
   
 - title: "Improved PPG-based estimation of the blood pressure using latent space features"
   year: 2019
@@ -45,8 +45,8 @@
   venue: Signal, Image and Video Processing
   pdf: https://link.springer.com/article/10.1007/s11760-019-01460-1
   doi: 10.1007/s11760-019-01460-1
-  slides:
-  video:
+  # slides:
+  # video:
 
 # - title: "Modeling Mobile Interface Tappability Using Crowdsourcing and Deep Learning"
 #   year: 2019
