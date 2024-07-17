@@ -1,3 +1,26 @@
+- title: "UniFed: A Universal Federation of a Mixture of Highly Heterogeneous Medical Image Classification Tasks"
+  year: 2024
+  authors: 
+    - <b>Atefe Hassani</b>
+    - Islem Rekik
+  venue: MLMI
+  # pdf: https://ieeexplore.ieee.org/document/10230236?denied=
+  # doi: 10.1109/ACCESS.2023.3308810
+  # slides:
+  # video:
+
+- title: "Anodal HD-tDCS on the dominant anterior temporal lobe and dorsolateral prefrontal cortex: clinical results in patients with mild cognitive impairment"
+  year: 2024
+  authors: Rezakhani Soheila, Amiri Mahmood, Hassani Atefe, Esmaeilpour Khadijeh, Sheibani Vahid
+    - Soheila Rezakhani
+    - Amiri Mahmood
+    - <b>Atefe Hassani</b>
+    - Khadijeh Esmaeilpour
+    - Vahid Sheibani
+  venue: Alzheimer's Research & Therapy
+  pdf: https://link.springer.com/article/10.1186/s13195-023-01370-y
+  doi: https://doi.org/10.1186/s13195-023-01370-y
+
 - title: "Gender Differences in EEG Responses to Color and Black-White Images: Implications for Neuromarketing Strategies"
   year: 2023
   authors: 
