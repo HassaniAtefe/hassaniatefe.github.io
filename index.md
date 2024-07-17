@@ -18,5 +18,10 @@ Prior to that, I graduated with a master’s degree in Biomedical Engineering fr
 💡Always seeking opportunities to gain valuable experience and make a meaningful impact in the field of AI in healthcare.
 
 🌟 Let's collaborate and drive innovation in healthcare together! 🌟
+
+## Recent News 
+
+<b>Recent News </b>
+
 <!-- <a href="https://faculty.washington.edu/ajko/">Amy Ko</a> -->
 <!-- <a href="#" target="_blank">url</a> -->
