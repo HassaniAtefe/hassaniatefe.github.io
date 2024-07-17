@@ -17,6 +17,5 @@ My research focuses on the theory and practical applications of AI and Machine L
 💡Always seeking opportunities to gain valuable experience and make a meaningful impact in the field of AI in healthcare.
 
 🌟 Let's collaborate and drive innovation in healthcare together! 🌟
-
-
+<!-- <a href="https://faculty.washington.edu/ajko/">Amy Ko</a> -->
 <!-- <a href="#" target="_blank">url</a> -->
