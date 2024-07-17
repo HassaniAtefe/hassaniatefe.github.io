@@ -21,7 +21,7 @@ Prior to that, I graduated with a master’s degree in Biomedical Engineering fr
 
 ## Recent News 
 
-- __July 12, 2024__: Serving as PC for __<a href="https://sites.google.com/view/mlmi2024/home" target="_blank"> MLMI 2024 🤗 </a>__
+- <b> July 12, 2024 </b>: Serving as PC for __<a href="https://sites.google.com/view/mlmi2024/home" target="_blank"> MLMI 2024 </a>__ 🤗
 
 <!-- <a href="https://faculty.washington.edu/ajko/">Amy Ko</a> -->
 <!-- <a href="#" target="_blank">url</a> -->
