@@ -21,7 +21,7 @@ Prior to that, I graduated with a master’s degree in Biomedical Engineering fr
 
 ## Recent News 
 - <b>August 5, 2024</b>: Journal Reviewer for __<a href="https://journalofbigdata.springeropen.com/" target="_blank"> Journal of Big Data</a>__-Springer Nature 2024 🤗
-- <b>July 16, 2024</b>: Our paper entitled __<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=pq1e3SMAAAAJ&sortby=pubdate&citation_for_view=pq1e3SMAAAAJ:W7OEmFMy1HYC" target="_blank"> "UniFed: A Universal Federation of a Mixture of Highly Heterogeneous Medical Image Classification Tasks"</a>__ has been accpted into MLMI@MICCAI.
+- <b>July 16, 2024</b>: Our paper entitled __<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=pq1e3SMAAAAJ&sortby=pubdate&citation_for_view=pq1e3SMAAAAJ:W7OEmFMy1HYC" target="_blank"> "UniFed: A Universal Federation of a Mixture of Highly Heterogeneous Medical Image Classification Tasks"</a>__ has been accepted into MLMI@MICCAI.
 - <b>July 12, 2024</b>: Program Committee for __<a href="https://sites.google.com/view/mlmi2024/home" target="_blank"> PRIME-MICCAI 2024 </a>__ 🤗
 
 <!-- <a href="https://faculty.washington.edu/ajko/">Amy Ko</a> -->
