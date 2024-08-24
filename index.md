@@ -21,8 +21,8 @@ Prior to that, I graduated with a master’s degree in Biomedical Engineering fr
 
 ## Recent News 
 
-- <b>July 12, 2024</b>: Serving as PC for __<a href="https://sites.google.com/view/mlmi2024/home" target="_blank"> PRIME-MICCAI 2024 </a>__ 🤗
-- <b>August 5, 2024</b>: Journal of Big Data 2024
+- <b>July 12, 2024</b>: Program Committee for __<a href="https://sites.google.com/view/mlmi2024/home" target="_blank"> PRIME-MICCAI 2024 </a>__ 🤗
+- <b>August 5, 2024</b>: Journal Reviewer: for __<a href="https://journalofbigdata.springeropen.com/" target="_blank"> Journal of Big Data-Springer Nature 2024 </a>__ 🤗
 
 <!-- <a href="https://faculty.washington.edu/ajko/">Amy Ko</a> -->
 <!-- <a href="#" target="_blank">url</a> -->
