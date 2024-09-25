@@ -74,6 +74,11 @@
         <i class="fa fa-window-maximize" aria-hidden="true"></i> Slides
       </a>
     {% endif %}
+    {% if pub.code %}
+    <a target="_blank" class="video" href="{{ pub.code }}">
+      <i class="fa fa-code" aria-hidden="true"></i> Codes
+    </a>
+    {% endif %}
     </div>
   {% endif %}
 </div>
