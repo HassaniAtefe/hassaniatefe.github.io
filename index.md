@@ -23,7 +23,7 @@ Prior to that, I graduated with a master’s degree in Biomedical Engineering fr
 🌟 Let's collaborate and drive innovation in healthcare together! 🌟
 
 ## Recent News 
-- <b>February 15, 2025</b>: Honored to serve as a PC member for __<a href="https://llm4eval.github.io/WSDM2025/" target="_blank"> LLM4Eval@WSDM 2025
+- <b>February 15, 2025</b>: Honored to serve as a PC member for __<a href="https://llm4eval.github.io/WSDM2025/" target="_blank"> LLM4Eval@WSDM 2025</a>__
 - <b>October 31, 2024</b>: Watch the UniFed video __<a href="https://www.youtube.com/watch?v=_ctzgmxt4fE&t=60s" target="_blank"> here</a>__!
 - <b>September 20, 2024</b>: __<a href="https://github.com/basiralab/UniFed" target="_blank"> UniFed's official code</a>__ is now available on the BASIRA Lab GitHub repository.
 - <b>August 5, 2024</b>: Happy to serve as a journal reviewer for __<a href="https://journalofbigdata.springeropen.com/" target="_blank"> Journal of Big Data</a>__-Springer Nature 2024 🤗
