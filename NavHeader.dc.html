@@ -37,17 +37,17 @@ class Component extends DCLogic {
   };
 
   renderVals() {
-    const file = window.location.pathname.split('/').pop().replace('.dc.html', '');
+    const file = window.location.pathname.split('/').pop().replace('.html', '');
     const items = [
       ['experience', 'Experience'], ['publications', 'Publications'], ['projects', 'Projects'], ['news', 'News'],
       ['blog', 'Blog'], ['awards', 'Awards'], ['talks', 'Talks'], ['service', 'Service'], ['hobbies', 'Hobbies'],
     ];
     const links = items.map(([key, label]) => ({
-      key, label, href: key + '.dc.html',
+      key, label, href: key + '.html',
       style: (file === key) ? { color: 'var(--color-accent)', fontWeight: 700 } : {},
     }));
     return {
-      homeHref: 'index.dc.html',
+      homeHref: 'index.html',
       cvHref: 'files/cv.pdf',
       links,
       toggleTheme: this.toggleTheme,
