@@ -8,7 +8,7 @@
 <body>
 <x-dc>
 <helmet>
-  <meta name="description" content="News — Alireza Salemi.">
+  <meta name="description" content="Blog — Alireza Salemi.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/styles.css">
@@ -63,13 +63,17 @@
 
 <dc-import name="NavHeader" hint-size="100%,60px"></dc-import>
 
-<main style="max-width:720px;margin:0 auto;padding:var(--space-8) var(--space-4);">
-  <a href="news.dc.html">&larr; All news</a>
-  <sc-if value="{{ notFound }}"><p style="margin-top:var(--space-6);opacity:0.7;">News item not found.</p></sc-if>
+<main style="max-width:680px;margin:0 auto;padding:var(--space-8) var(--space-4);">
+  <a href="blog.html">&larr; All posts</a>
+  <sc-if value="{{ notFound }}"><p style="margin-top:var(--space-6);opacity:0.7;">Post not found.</p></sc-if>
   <sc-if value="{{ found }}">
     <p style="opacity:0.55;font-size:13px;text-transform:uppercase;letter-spacing:0.04em;margin:var(--space-4) 0 6px;">{{ date }}</p>
-    <h1 style="font-size:28px;line-height:1.35;margin:0 0 var(--space-4);">{{ headline }}</h1>
-    <p style="font-size:15.5px;line-height:1.75;">{{ body }}</p>
+    <h1 style="font-size:30px;margin:0 0 var(--space-4);">{{ title }}</h1>
+    <div style="font-size:15.5px;line-height:1.8;">
+      <sc-for list="{{ paragraphs }}" as="para" hint-placeholder-count="2">
+        <p>{{ para }}</p>
+      </sc-for>
+    </div>
   </sc-if>
 </main>
 
@@ -77,19 +81,18 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
-  state = { item: null, loaded: false };
+  state = { post: null, loaded: false };
   componentDidMount() {
     const slug = new URLSearchParams(window.location.search).get('slug');
-    fetch('data/news.json').then(r => r.json()).then(items => {
-      this.setState({ item: items.find(n => n.slug === slug) || null, loaded: true });
-    }).catch(err => console.error('Failed to load news item:', err));
+    fetch('data/blog.json').then(r => r.json()).then(posts => {
+      this.setState({ post: posts.find(p => p.slug === slug) || null, loaded: true });
+    }).catch(err => console.error('Failed to load post:', err));
   }
   renderVals() {
-    const { item, loaded } = this.state;
+    const { post, loaded } = this.state;
     if (!loaded) return { found: false, notFound: false };
-    if (!item) return { found: false, notFound: true };
-    const headline = item.text.replace(/<[^>]+>/g, '');
-    return { found: true, notFound: false, date: item.date, headline, body: item.body || '' };
+    if (!post) return { found: false, notFound: true };
+    return { found: true, notFound: false, date: post.date, title: post.title, paragraphs: post.paragraphs };
   }
 }
 </script>

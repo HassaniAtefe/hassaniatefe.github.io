@@ -161,7 +161,7 @@ class Component extends DCLogic {
 
     const pubs = filtered.map(p => ({
       ...p,
-      href: 'paper.dc.html?slug=' + p.slug,
+      href: 'paper.html?slug=' + p.slug,
       venueClass: venueTagClass(p.venueType) + ' tag',
       authorsHtml: { __html: this.authorsHtml(p.authors) },
       linkChips: Object.entries(p.links || {}).map(([k, url]) => ({ url, html: { __html: this.fmt.linkChipHtml(k, LINK_LABELS[k] || k) } })),

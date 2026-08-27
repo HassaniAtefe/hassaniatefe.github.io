@@ -91,7 +91,7 @@ class Component extends DCLogic {
   }
   renderVals() {
     const items = this.state.items.map(n => ({
-      ...n, html: { __html: n.text }, href: n.slug ? ('news-post.dc.html?slug=' + n.slug) : '',
+      ...n, html: { __html: n.text }, href: n.slug ? ('news-post.html?slug=' + n.slug) : '',
     }));
     return { items };
   }

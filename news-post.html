@@ -8,7 +8,7 @@
 <body>
 <x-dc>
 <helmet>
-  <meta name="description" content="Blog — Alireza Salemi.">
+  <meta name="description" content="News — Alireza Salemi.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/styles.css">
@@ -63,33 +63,33 @@
 
 <dc-import name="NavHeader" hint-size="100%,60px"></dc-import>
 
-<main style="max-width:760px;margin:0 auto;padding:var(--space-8) var(--space-4);">
-  <h1 style="font-size:34px;margin-bottom:var(--space-4);">Blog</h1>
-  <div style="display:flex;flex-direction:column;gap:14px;">
-    <sc-for list="{{ posts }}" as="post" hint-placeholder-count="3">
-      <a href="{{ post.href }}" class="card elev-sm" style="display:block;color:inherit;">
-        <div class="card-kicker">{{ post.date }}</div>
-        <div class="card-title">{{ post.title }}</div>
-        <p class="card-body" style="margin-bottom:8px;">{{ post.excerpt }}</p>
-        <span style="display:flex;align-items:center;gap:4px;font-size:13px;color:var(--color-accent-700);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>Read post</span>
-      </a>
-    </sc-for>
-    <sc-if value="{{ isEmpty }}"><p style="opacity:0.6;">No posts yet.</p></sc-if>
-  </div>
+<main style="max-width:720px;margin:0 auto;padding:var(--space-8) var(--space-4);">
+  <a href="news.html">&larr; All news</a>
+  <sc-if value="{{ notFound }}"><p style="margin-top:var(--space-6);opacity:0.7;">News item not found.</p></sc-if>
+  <sc-if value="{{ found }}">
+    <p style="opacity:0.55;font-size:13px;text-transform:uppercase;letter-spacing:0.04em;margin:var(--space-4) 0 6px;">{{ date }}</p>
+    <h1 style="font-size:28px;line-height:1.35;margin:0 0 var(--space-4);">{{ headline }}</h1>
+    <p style="font-size:15.5px;line-height:1.75;">{{ body }}</p>
+  </sc-if>
 </main>
 
 <dc-import name="Footer" hint-size="100%,200px"></dc-import>
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
-  state = { posts: [] };
+  state = { item: null, loaded: false };
   componentDidMount() {
-    fetch('data/blog.json').then(r => r.json()).then(posts => this.setState({ posts }))
-      .catch(err => console.error('Failed to load blog posts:', err));
+    const slug = new URLSearchParams(window.location.search).get('slug');
+    fetch('data/news.json').then(r => r.json()).then(items => {
+      this.setState({ item: items.find(n => n.slug === slug) || null, loaded: true });
+    }).catch(err => console.error('Failed to load news item:', err));
   }
   renderVals() {
-    const posts = this.state.posts.map(p => ({ ...p, href: 'blog-post.dc.html?slug=' + p.slug }));
-    return { posts, isEmpty: posts.length === 0 };
+    const { item, loaded } = this.state;
+    if (!loaded) return { found: false, notFound: false };
+    if (!item) return { found: false, notFound: true };
+    const headline = item.text.replace(/<[^>]+>/g, '');
+    return { found: true, notFound: false, date: item.date, headline, body: item.body || '' };
   }
 }
 </script>

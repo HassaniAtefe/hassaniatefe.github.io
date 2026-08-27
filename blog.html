@@ -63,36 +63,33 @@
 
 <dc-import name="NavHeader" hint-size="100%,60px"></dc-import>
 
-<main style="max-width:680px;margin:0 auto;padding:var(--space-8) var(--space-4);">
-  <a href="blog.dc.html">&larr; All posts</a>
-  <sc-if value="{{ notFound }}"><p style="margin-top:var(--space-6);opacity:0.7;">Post not found.</p></sc-if>
-  <sc-if value="{{ found }}">
-    <p style="opacity:0.55;font-size:13px;text-transform:uppercase;letter-spacing:0.04em;margin:var(--space-4) 0 6px;">{{ date }}</p>
-    <h1 style="font-size:30px;margin:0 0 var(--space-4);">{{ title }}</h1>
-    <div style="font-size:15.5px;line-height:1.8;">
-      <sc-for list="{{ paragraphs }}" as="para" hint-placeholder-count="2">
-        <p>{{ para }}</p>
-      </sc-for>
-    </div>
-  </sc-if>
+<main style="max-width:760px;margin:0 auto;padding:var(--space-8) var(--space-4);">
+  <h1 style="font-size:34px;margin-bottom:var(--space-4);">Blog</h1>
+  <div style="display:flex;flex-direction:column;gap:14px;">
+    <sc-for list="{{ posts }}" as="post" hint-placeholder-count="3">
+      <a href="{{ post.href }}" class="card elev-sm" style="display:block;color:inherit;">
+        <div class="card-kicker">{{ post.date }}</div>
+        <div class="card-title">{{ post.title }}</div>
+        <p class="card-body" style="margin-bottom:8px;">{{ post.excerpt }}</p>
+        <span style="display:flex;align-items:center;gap:4px;font-size:13px;color:var(--color-accent-700);"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>Read post</span>
+      </a>
+    </sc-for>
+    <sc-if value="{{ isEmpty }}"><p style="opacity:0.6;">No posts yet.</p></sc-if>
+  </div>
 </main>
 
 <dc-import name="Footer" hint-size="100%,200px"></dc-import>
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
-  state = { post: null, loaded: false };
+  state = { posts: [] };
   componentDidMount() {
-    const slug = new URLSearchParams(window.location.search).get('slug');
-    fetch('data/blog.json').then(r => r.json()).then(posts => {
-      this.setState({ post: posts.find(p => p.slug === slug) || null, loaded: true });
-    }).catch(err => console.error('Failed to load post:', err));
+    fetch('data/blog.json').then(r => r.json()).then(posts => this.setState({ posts }))
+      .catch(err => console.error('Failed to load blog posts:', err));
   }
   renderVals() {
-    const { post, loaded } = this.state;
-    if (!loaded) return { found: false, notFound: false };
-    if (!post) return { found: false, notFound: true };
-    return { found: true, notFound: false, date: post.date, title: post.title, paragraphs: post.paragraphs };
+    const posts = this.state.posts.map(p => ({ ...p, href: 'blog-post.html?slug=' + p.slug }));
+    return { posts, isEmpty: posts.length === 0 };
   }
 }
 </script>
