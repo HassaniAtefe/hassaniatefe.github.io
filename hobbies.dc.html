@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="description" content="Photography and cooking — Alireza Salemi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/styles.css">
+  <script src="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/_ds_bundle.js"></script>
+  <script src="image-slot.js"></script>
+  <style>
+    :root { --font-heading: "Spectral", serif; --font-heading-weight: 600; --font-body: "Karla", sans-serif; }
+    :root {
+      --color-bg: #eaf3f6;
+      --color-surface: #dcebef;
+      --color-text: #2a3538;
+      --color-accent: #5b9bb0;
+      --color-accent-2: #c9a13a;
+      --color-divider: color-mix(in srgb, #2a3538 16%, transparent);
+
+      --color-neutral-100: #f7fafb;
+      --color-neutral-200: #eaf1f4;
+      --color-neutral-300: #d3e0e5;
+      --color-neutral-400: #b0c4cc;
+      --color-neutral-500: #8ba2ab;
+      --color-neutral-600: #67818c;
+      --color-neutral-700: #4d626b;
+      --color-neutral-800: #38474e;
+      --color-neutral-900: #232c30;
+
+      --color-accent-100: #eef7fa;
+      --color-accent-200: #d7edf3;
+      --color-accent-300: #b8dfe9;
+      --color-accent-400: #8fc3d4;
+      --color-accent-500: #5b9bb0;
+      --color-accent-600: #457f92;
+      --color-accent-700: #336577;
+      --color-accent-800: #234a58;
+      --color-accent-900: #16323d;
+
+      --color-accent-2-100: #fdf9ee;
+      --color-accent-2-200: #faf0d6;
+      --color-accent-2-300: #f3e2af;
+      --color-accent-2-400: #e8cd7c;
+      --color-accent-2-500: #c9a13a;
+      --color-accent-2-600: #a67f2a;
+      --color-accent-2-700: #82631f;
+      --color-accent-2-800: #5c4716;
+      --color-accent-2-900: #3a2d0e;
+    }
+    html[data-theme="dark"] { --color-bg: var(--color-neutral-900); --color-surface: var(--color-neutral-800); --color-text: var(--color-neutral-100); --color-divider: color-mix(in srgb, var(--color-neutral-100) 18%, transparent); }
+    body { margin: 0; }
+    a { color: var(--color-accent-700); text-decoration: none; }
+    a:hover { color: var(--color-accent); text-decoration: underline; }
+  </style>
+  <script>(function(){ if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); })();</script>
+</helmet>
+
+<dc-import name="NavHeader" hint-size="100%,60px"></dc-import>
+
+<main style="max-width:1000px;margin:0 auto;padding:var(--space-8) var(--space-4);">
+  <h1 style="font-size:34px;margin-bottom:6px;">Hobbies</h1>
+  <p style="opacity:0.7;font-size:14.5px;margin:0 0 var(--space-4);">Outside of research: photography and cooking.</p>
+
+  <div class="seg" role="radiogroup" aria-label="Hobby tabs" style="margin-bottom:var(--space-6);">
+    <label class="seg-opt"><input type="radio" name="hobbytab" checked="{{ isPhotography }}" onChange="{{ selectPhotography }}"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg>Photography</label>
+    <label class="seg-opt"><input type="radio" name="hobbytab" checked="{{ isCooking }}" onChange="{{ selectCooking }}"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 11h.01"></path><path d="M11 15h.01"></path><path d="M16 16h.01"></path><path d="m2 16 20 6-6-20A20 20 0 0 0 2 16"></path><path d="M5.71 17.11a17.04 17.04 0 0 1 11.4-11.4"></path></svg>Cooking</label>
+  </div>
+
+  <sc-if value="{{ isPhotography }}">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);">
+      <sc-for list="{{ photos }}" as="p" hint-placeholder-count="6">
+        <figure class="washed" style="margin:0;border-radius:var(--radius-md);overflow:hidden;">
+          <image-slot id="{{ p.id }}" shape="rect" placeholder="{{ p.caption }}" style="width:100%;height:220px;"></image-slot>
+        </figure>
+      </sc-for>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isCooking }}">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-4);">
+      <sc-for list="{{ dishes }}" as="d" hint-placeholder-count="6">
+        <div class="card elev-sm" style="padding:0;overflow:hidden;">
+          <div class="washed">
+            <image-slot id="{{ d.id }}" shape="rect" placeholder="{{ d.caption }}" style="width:100%;height:150px;"></image-slot>
+          </div>
+          <div style="padding:var(--space-3);">
+            <div class="card-title" style="font-size:15px;">{{ d.title }}</div>
+            <p class="card-body" style="margin:4px 0 0;">{{ d.caption }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </sc-if>
+</main>
+
+<dc-import name="Footer" hint-size="100%,200px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { tab: 'photography', photos: [], dishes: [] };
+
+  componentDidMount() {
+    Promise.all([
+      fetch('data/hobbies-photography.json').then(r => r.json()),
+      fetch('data/hobbies-cooking.json').then(r => r.json()),
+    ]).then(([photos, dishes]) => this.setState({ photos, dishes }))
+      .catch(err => console.error('Failed to load hobbies data:', err));
+  }
+
+  renderVals() {
+    return {
+      isPhotography: this.state.tab === 'photography',
+      isCooking: this.state.tab === 'cooking',
+      selectPhotography: () => this.setState({ tab: 'photography' }),
+      selectCooking: () => this.setState({ tab: 'cooking' }),
+      photos: this.state.photos,
+      dishes: this.state.dishes,
+    };
+  }
+}
+</script>
+</body>
+</html>

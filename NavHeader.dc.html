@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<header class="nav" style="position:sticky;top:0;z-index:50;background:var(--color-bg);border-bottom:1px solid var(--color-divider);flex-wrap:wrap;row-gap:8px;">
+  <a href="{{ homeHref }}" class="nav-brand" style="text-decoration:none;color:var(--color-text);">Atefe Hassani</a>
+  <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin-left:auto;">
+    <sc-for list="{{ links }}" as="link" hint-placeholder-count="8">
+      <a href="{{ link.href }}" style="{{ link.style }}">{{ link.label }}</a>
+    </sc-for>
+    <a href="{{ cvHref }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:5px;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>CV</a>
+    <button type="button" class="btn btn-secondary btn-icon" onClick="{{ toggleTheme }}" aria-label="Toggle color theme" title="{{ themeTitle }}">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+    </button>
+  </div>
+</header>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { dark: false };
+
+  componentDidMount() {
+    this.setState({ dark: document.documentElement.getAttribute('data-theme') === 'dark' });
+  }
+
+  toggleTheme = () => {
+    const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    if (next === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    else document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('theme', next);
+    this.setState({ dark: next === 'dark' });
+  };
+
+  renderVals() {
+    const file = window.location.pathname.split('/').pop().replace('.dc.html', '');
+    const items = [
+      ['experience', 'Experience'], ['publications', 'Publications'], ['projects', 'Projects'], ['news', 'News'],
+      ['blog', 'Blog'], ['awards', 'Awards'], ['talks', 'Talks'], ['service', 'Service'], ['hobbies', 'Hobbies'],
+    ];
+    const links = items.map(([key, label]) => ({
+      key, label, href: key + '.dc.html',
+      style: (file === key) ? { color: 'var(--color-accent)', fontWeight: 700 } : {},
+    }));
+    return {
+      homeHref: 'index.dc.html',
+      cvHref: 'files/cv.pdf',
+      links,
+      toggleTheme: this.toggleTheme,
+      themeTitle: this.state.dark ? 'Switch to light' : 'Switch to dark',
+    };
+  }
+}
+</script>
+</body>
+</html>

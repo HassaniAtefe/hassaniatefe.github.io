@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="description" content="Paper details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/styles.css">
+  <script src="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/_ds_bundle.js"></script>
+  <style>
+    :root { --font-heading: "Spectral", serif; --font-heading-weight: 600; --font-body: "Karla", sans-serif; }
+    :root {
+      --color-bg: #eaf3f6;
+      --color-surface: #dcebef;
+      --color-text: #2a3538;
+      --color-accent: #5b9bb0;
+      --color-accent-2: #c9a13a;
+      --color-divider: color-mix(in srgb, #2a3538 16%, transparent);
+
+      --color-neutral-100: #f7fafb;
+      --color-neutral-200: #eaf1f4;
+      --color-neutral-300: #d3e0e5;
+      --color-neutral-400: #b0c4cc;
+      --color-neutral-500: #8ba2ab;
+      --color-neutral-600: #67818c;
+      --color-neutral-700: #4d626b;
+      --color-neutral-800: #38474e;
+      --color-neutral-900: #232c30;
+
+      --color-accent-100: #eef7fa;
+      --color-accent-200: #d7edf3;
+      --color-accent-300: #b8dfe9;
+      --color-accent-400: #8fc3d4;
+      --color-accent-500: #5b9bb0;
+      --color-accent-600: #457f92;
+      --color-accent-700: #336577;
+      --color-accent-800: #234a58;
+      --color-accent-900: #16323d;
+
+      --color-accent-2-100: #fdf9ee;
+      --color-accent-2-200: #faf0d6;
+      --color-accent-2-300: #f3e2af;
+      --color-accent-2-400: #e8cd7c;
+      --color-accent-2-500: #c9a13a;
+      --color-accent-2-600: #a67f2a;
+      --color-accent-2-700: #82631f;
+      --color-accent-2-800: #5c4716;
+      --color-accent-2-900: #3a2d0e;
+    }
+    html[data-theme="dark"] { --color-bg: var(--color-neutral-900); --color-surface: var(--color-neutral-800); --color-text: var(--color-neutral-100); --color-divider: color-mix(in srgb, var(--color-neutral-100) 18%, transparent); }
+    body { margin: 0; }
+    a { color: var(--color-accent-700); text-decoration: none; }
+    a:hover { color: var(--color-accent); text-decoration: underline; }
+  </style>
+  <script>(function(){ if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); })();</script>
+</helmet>
+
+<dc-import name="NavHeader" hint-size="100%,60px"></dc-import>
+
+<main style="max-width:760px;margin:0 auto;padding:var(--space-8) var(--space-4) var(--space-8);">
+  <a href="publications.dc.html">&larr; All publications</a>
+
+  <sc-if value="{{ notFound }}">
+    <p style="margin-top:var(--space-6);opacity:0.7;">Paper not found.</p>
+  </sc-if>
+
+  <sc-if value="{{ found }}">
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin:var(--space-4) 0 var(--space-3);">
+      <span class="{{ venueClass }}">{{ venue }}</span>
+      <sc-if value="{{ award }}"><span class="tag tag-accent-2"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-1px;margin-right:3px;"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>{{ award }}</span></sc-if>
+    </div>
+
+    <h1 style="font-size:30px;line-height:1.25;margin:0 0 var(--space-4);">{{ title }}</h1>
+
+    <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:var(--space-4);">
+      <sc-for list="{{ authors }}" as="a" hint-placeholder-count="4">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="{{ a.avatarStyle }}">{{ a.initials }}</span>
+          <span style="{{ a.textStyle }}">{{ a.name }}</span>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:var(--space-6);">
+      <sc-for list="{{ linkChips }}" as="lnk" hint-placeholder-count="2">
+        <a href="{{ lnk.url }}" target="_blank" rel="noopener" class="btn btn-secondary" dangerouslySetInnerHTML="{{ lnk.html }}"></a>
+      </sc-for>
+    </div>
+
+    <sc-if value="{{ desc }}">
+      <h2 style="font-size:19px;">Abstract</h2>
+      <p style="line-height:1.7;font-size:15px;">{{ desc }}</p>
+    </sc-if>
+
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin:var(--space-4) 0 var(--space-6);">
+      <sc-for list="{{ chips }}" as="c" hint-placeholder-count="3">
+        <span class="{{ c.className }}">{{ c.label }}</span>
+      </sc-for>
+    </div>
+
+    <h2 style="font-size:19px;">Cite</h2>
+    <div class="card" style="font-family:ui-monospace,monospace;font-size:12.5px;white-space:pre-wrap;line-height:1.6;">{{ citation }}</div>
+    <button type="button" class="btn btn-ghost" onClick="{{ copyCitation }}" style="margin-top:8px;">{{ copyLabel }}</button>
+  </sc-if>
+</main>
+
+<dc-import name="Footer" hint-size="100%,200px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const LINK_LABELS = { paper: 'Paper', code: 'Code', website: 'Website', benchmark: 'Benchmark', demo: 'Demo', video: 'Video', doi: 'DOI' };
+
+class Component extends DCLogic {
+  state = { pub: null, loaded: false, copyLabel: 'Copy citation' };
+
+  componentDidMount() {
+    import('./utils/format.js').then(mod => { this.fmt = mod; this.forceUpdate(); });
+    const slug = new URLSearchParams(window.location.search).get('slug');
+    fetch('data/publications.json').then(r => r.json()).then(pubs => {
+      const pub = pubs.find(p => p.slug === slug) || null;
+      this.setState({ pub, loaded: true });
+    }).catch(err => console.error('Failed to load publication:', err));
+  }
+
+  copyCitation = () => {
+    navigator.clipboard.writeText(this.citationText(this.state.pub)).then(() => {
+      this.setState({ copyLabel: 'Copied!' });
+      setTimeout(() => this.setState({ copyLabel: 'Copy citation' }), 1500);
+    });
+  };
+
+  citationText(pub) {
+    if (!pub) return '';
+    return `${pub.authors.join(', ')}. "${pub.title}." ${pub.venue}, ${pub.year}.`;
+  }
+
+  renderVals() {
+    const { pub, loaded } = this.state;
+    if (!loaded || !this.fmt) return { notFound: false, found: false };
+    if (!pub) return { notFound: true, found: false };
+
+    const { venueTagClass, topicTagClass, buildAuthorList } = this.fmt;
+    const authors = buildAuthorList(pub.authors, 'Alireza Salemi').map(a => ({
+      ...a,
+      avatarStyle: {
+        width: 36, height: 36, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center',
+        fontFamily: 'var(--font-heading)', fontSize: 13, flexShrink: 0,
+        background: a.tone === 'accent' ? 'var(--color-accent-100)' : 'var(--color-accent-2-100)',
+        color: a.tone === 'accent' ? 'var(--color-accent-800)' : 'var(--color-accent-2-800)',
+      },
+      textStyle: a.isMe ? { fontWeight: 700 } : {},
+    }));
+
+    const chips = [
+      ...(pub.topics || []).map(t => ({ label: t, className: topicTagClass(t) + ' tag' })),
+      ...(pub.tags || []).map(t => ({ label: t, className: 'tag tag-outline' })),
+    ];
+
+    return {
+      found: true, notFound: false,
+      title: pub.title, venue: pub.venue, award: pub.award || '', desc: pub.desc,
+      venueClass: venueTagClass(pub.venueType) + ' tag',
+      authors,
+      linkChips: Object.entries(pub.links || {}).map(([k, url]) => ({ url, html: { __html: this.fmt.linkChipHtml(k, LINK_LABELS[k] || k) } })),
+      chips,
+      citation: this.citationText(pub),
+      copyCitation: this.copyCitation,
+      copyLabel: this.state.copyLabel,
+    };
+  }
+}
+</script>
+</body>
+</html>

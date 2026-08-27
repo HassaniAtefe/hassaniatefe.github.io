@@ -1,0 +1,23 @@
+[
+  {
+    "org": "BASIRA Lab, Imperial College London",
+    "date": "Current",
+    "role": "Guest Researcher",
+    "supervisor": "Prof. Islem Rekik",
+    "desc": "Researching multi-task federated learning across highly heterogeneous medical image classification tasks."
+  },
+  {
+    "org": "Multimodal Intelligence Lab, University of Exeter",
+    "date": "Current",
+    "role": "Part-time Research Intern",
+    "supervisor": "Prof. Zeyu Fu",
+    "desc": "Working on multimodal LLMs and retrieval-based methods for vision-language models in medical imaging."
+  },
+  {
+    "org": "Shahed University, Iran",
+    "date": "Prior",
+    "role": "MSc, Biomedical Engineering",
+    "supervisor": "Prof. Ali Motie Nasrabadi",
+    "desc": "Ranked 1st among graduate students and selected as an outstanding researcher. Research on EEG-based neuromarketing and signal processing."
+  }
+]

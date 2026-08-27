@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="description" content="Awards and honors — Alireza Salemi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/styles.css">
+  <script src="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/_ds_bundle.js"></script>
+  <style>
+    :root { --font-heading: "Spectral", serif; --font-heading-weight: 600; --font-body: "Karla", sans-serif; }
+    :root {
+      --color-bg: #eaf3f6;
+      --color-surface: #dcebef;
+      --color-text: #2a3538;
+      --color-accent: #5b9bb0;
+      --color-accent-2: #c9a13a;
+      --color-divider: color-mix(in srgb, #2a3538 16%, transparent);
+
+      --color-neutral-100: #f7fafb;
+      --color-neutral-200: #eaf1f4;
+      --color-neutral-300: #d3e0e5;
+      --color-neutral-400: #b0c4cc;
+      --color-neutral-500: #8ba2ab;
+      --color-neutral-600: #67818c;
+      --color-neutral-700: #4d626b;
+      --color-neutral-800: #38474e;
+      --color-neutral-900: #232c30;
+
+      --color-accent-100: #eef7fa;
+      --color-accent-200: #d7edf3;
+      --color-accent-300: #b8dfe9;
+      --color-accent-400: #8fc3d4;
+      --color-accent-500: #5b9bb0;
+      --color-accent-600: #457f92;
+      --color-accent-700: #336577;
+      --color-accent-800: #234a58;
+      --color-accent-900: #16323d;
+
+      --color-accent-2-100: #fdf9ee;
+      --color-accent-2-200: #faf0d6;
+      --color-accent-2-300: #f3e2af;
+      --color-accent-2-400: #e8cd7c;
+      --color-accent-2-500: #c9a13a;
+      --color-accent-2-600: #a67f2a;
+      --color-accent-2-700: #82631f;
+      --color-accent-2-800: #5c4716;
+      --color-accent-2-900: #3a2d0e;
+    }
+    html[data-theme="dark"] { --color-bg: var(--color-neutral-900); --color-surface: var(--color-neutral-800); --color-text: var(--color-neutral-100); --color-divider: color-mix(in srgb, var(--color-neutral-100) 18%, transparent); }
+    body { margin: 0; }
+    a { color: var(--color-accent-700); text-decoration: none; }
+    a:hover { color: var(--color-accent); text-decoration: underline; }
+  </style>
+  <script>(function(){ if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); })();</script>
+</helmet>
+
+<dc-import name="NavHeader" hint-size="100%,60px"></dc-import>
+
+<main style="max-width:820px;margin:0 auto;padding:var(--space-8) var(--space-4);">
+  <h1 style="font-size:34px;margin-bottom:var(--space-4);">Awards &amp; Honors</h1>
+  <div style="display:flex;flex-direction:column;gap:12px;">
+    <sc-for list="{{ items }}" as="item" hint-placeholder-count="5">
+      <div class="{{ item.cardClass }}" style="display:flex;justify-content:space-between;align-items:flex-start;gap:var(--space-4);">
+        <div>
+          <div class="card-title">{{ item.title }}</div>
+          <p class="card-body">{{ item.desc }}</p>
+        </div>
+        <span style="opacity:0.5;font-size:12px;font-weight:700;white-space:nowrap;">{{ item.year }}</span>
+      </div>
+    </sc-for>
+  </div>
+</main>
+
+<dc-import name="Footer" hint-size="100%,200px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { items: [] };
+  componentDidMount() {
+    fetch('data/awards.json').then(r => r.json()).then(items => this.setState({ items }))
+      .catch(err => console.error('Failed to load awards:', err));
+  }
+  renderVals() {
+    const items = this.state.items.map(a => ({ ...a, cardClass: 'card elev-sm' + (a.featured ? '' : '') }));
+    return { items };
+  }
+}
+</script>
+</body>
+</html>

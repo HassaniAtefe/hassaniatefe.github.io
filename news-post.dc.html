@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="description" content="News — Alireza Salemi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/styles.css">
+  <script src="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/_ds_bundle.js"></script>
+  <style>
+    :root { --font-heading: "Spectral", serif; --font-heading-weight: 600; --font-body: "Karla", sans-serif; }
+    :root {
+      --color-bg: #eaf3f6;
+      --color-surface: #dcebef;
+      --color-text: #2a3538;
+      --color-accent: #5b9bb0;
+      --color-accent-2: #c9a13a;
+      --color-divider: color-mix(in srgb, #2a3538 16%, transparent);
+
+      --color-neutral-100: #f7fafb;
+      --color-neutral-200: #eaf1f4;
+      --color-neutral-300: #d3e0e5;
+      --color-neutral-400: #b0c4cc;
+      --color-neutral-500: #8ba2ab;
+      --color-neutral-600: #67818c;
+      --color-neutral-700: #4d626b;
+      --color-neutral-800: #38474e;
+      --color-neutral-900: #232c30;
+
+      --color-accent-100: #eef7fa;
+      --color-accent-200: #d7edf3;
+      --color-accent-300: #b8dfe9;
+      --color-accent-400: #8fc3d4;
+      --color-accent-500: #5b9bb0;
+      --color-accent-600: #457f92;
+      --color-accent-700: #336577;
+      --color-accent-800: #234a58;
+      --color-accent-900: #16323d;
+
+      --color-accent-2-100: #fdf9ee;
+      --color-accent-2-200: #faf0d6;
+      --color-accent-2-300: #f3e2af;
+      --color-accent-2-400: #e8cd7c;
+      --color-accent-2-500: #c9a13a;
+      --color-accent-2-600: #a67f2a;
+      --color-accent-2-700: #82631f;
+      --color-accent-2-800: #5c4716;
+      --color-accent-2-900: #3a2d0e;
+    }
+    html[data-theme="dark"] { --color-bg: var(--color-neutral-900); --color-surface: var(--color-neutral-800); --color-text: var(--color-neutral-100); --color-divider: color-mix(in srgb, var(--color-neutral-100) 18%, transparent); }
+    body { margin: 0; }
+    a { color: var(--color-accent-700); text-decoration: none; }
+    a:hover { color: var(--color-accent); text-decoration: underline; }
+  </style>
+  <script>(function(){ if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); })();</script>
+</helmet>
+
+<dc-import name="NavHeader" hint-size="100%,60px"></dc-import>
+
+<main style="max-width:720px;margin:0 auto;padding:var(--space-8) var(--space-4);">
+  <a href="news.dc.html">&larr; All news</a>
+  <sc-if value="{{ notFound }}"><p style="margin-top:var(--space-6);opacity:0.7;">News item not found.</p></sc-if>
+  <sc-if value="{{ found }}">
+    <p style="opacity:0.55;font-size:13px;text-transform:uppercase;letter-spacing:0.04em;margin:var(--space-4) 0 6px;">{{ date }}</p>
+    <h1 style="font-size:28px;line-height:1.35;margin:0 0 var(--space-4);">{{ headline }}</h1>
+    <p style="font-size:15.5px;line-height:1.75;">{{ body }}</p>
+  </sc-if>
+</main>
+
+<dc-import name="Footer" hint-size="100%,200px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { item: null, loaded: false };
+  componentDidMount() {
+    const slug = new URLSearchParams(window.location.search).get('slug');
+    fetch('data/news.json').then(r => r.json()).then(items => {
+      this.setState({ item: items.find(n => n.slug === slug) || null, loaded: true });
+    }).catch(err => console.error('Failed to load news item:', err));
+  }
+  renderVals() {
+    const { item, loaded } = this.state;
+    if (!loaded) return { found: false, notFound: false };
+    if (!item) return { found: false, notFound: true };
+    const headline = item.text.replace(/<[^>]+>/g, '');
+    return { found: true, notFound: false, date: item.date, headline, body: item.body || '' };
+  }
+}
+</script>
+</body>
+</html>

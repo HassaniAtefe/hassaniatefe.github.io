@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="description" content="Atefe Hassani — Guest Researcher at BASIRA Lab, Imperial College London, researching multimodal LLMs, retrieval, and federated learning for medical imaging.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/styles.css">
+  <script src="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/_ds_bundle.js"></script>
+  <style>
+    :root { --font-heading: "Spectral", serif; --font-heading-weight: 600; --font-body: "Karla", sans-serif; }
+    :root {
+      --color-bg: #eaf3f6;
+      --color-surface: #dcebef;
+      --color-text: #2a3538;
+      --color-accent: #5b9bb0;
+      --color-accent-2: #c9a13a;
+      --color-divider: color-mix(in srgb, #2a3538 16%, transparent);
+
+      --color-neutral-100: #f7fafb;
+      --color-neutral-200: #eaf1f4;
+      --color-neutral-300: #d3e0e5;
+      --color-neutral-400: #b0c4cc;
+      --color-neutral-500: #8ba2ab;
+      --color-neutral-600: #67818c;
+      --color-neutral-700: #4d626b;
+      --color-neutral-800: #38474e;
+      --color-neutral-900: #232c30;
+
+      --color-accent-100: #eef7fa;
+      --color-accent-200: #d7edf3;
+      --color-accent-300: #b8dfe9;
+      --color-accent-400: #8fc3d4;
+      --color-accent-500: #5b9bb0;
+      --color-accent-600: #457f92;
+      --color-accent-700: #336577;
+      --color-accent-800: #234a58;
+      --color-accent-900: #16323d;
+
+      --color-accent-2-100: #fdf9ee;
+      --color-accent-2-200: #faf0d6;
+      --color-accent-2-300: #f3e2af;
+      --color-accent-2-400: #e8cd7c;
+      --color-accent-2-500: #c9a13a;
+      --color-accent-2-600: #a67f2a;
+      --color-accent-2-700: #82631f;
+      --color-accent-2-800: #5c4716;
+      --color-accent-2-900: #3a2d0e;
+    }
+    html[data-theme="dark"] { --color-bg: var(--color-neutral-900); --color-surface: var(--color-neutral-800); --color-text: var(--color-neutral-100); --color-divider: color-mix(in srgb, var(--color-neutral-100) 18%, transparent); }
+    body { margin: 0; }
+    a { color: var(--color-accent-700); text-decoration: none; }
+    a:hover { color: var(--color-accent); text-decoration: underline; }
+  </style>
+  <script>(function(){ if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); })();</script>
+</helmet>
+
+<dc-import name="NavHeader" hint-size="100%,60px"></dc-import>
+
+<main>
+  <section style="max-width:1100px;margin:0 auto;padding:var(--space-8) var(--space-4);display:grid;grid-template-columns:1fr 220px;gap:var(--space-8);align-items:start;">
+    <div>
+      <h1 style="font-size:clamp(36px,5vw,56px);margin-bottom:var(--space-2);">Atefe Hassani</h1>
+      <p style="font-size:17px;margin:0 0 4px;">Guest Researcher &middot; BASIRA Lab, Imperial College London</p>
+      <p style="opacity:0.7;font-size:15px;margin:0 0 var(--space-4);">Part-time Research Intern, Multimodal Intelligence Lab, University of Exeter &middot; Advisor: <a href="https://scholar.google.com/citations?hl=en&user=tb6CVoAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener">Prof. Islem Rekik</a></p>
+
+      <sc-if value="{{ showJobMarket }}" hint-placeholder-val="{{ false }}">
+        <div style="background:var(--color-accent-100);border-radius:var(--radius-lg);padding:var(--space-4);margin-bottom:var(--space-4);max-width:560px;">
+          <p style="font-family:var(--font-heading);margin:0 0 6px;font-size:18px;color:var(--color-accent-800);">Open to new opportunities</p>
+          <p style="font-size:14.5px;margin:0 0 var(--space-3);opacity:0.85;line-height:1.55;">Add a note here about the roles or collaborations you're looking for.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <a href="mailto:hassaniatefe0@gmail.com" class="btn btn-primary" style="display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22 6 12 13 2 6"></polyline></svg>Let's chat</a>
+            <a href="files/cv.pdf" target="_blank" rel="noopener" class="btn btn-secondary" style="display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>View CV</a>
+          </div>
+        </div>
+      </sc-if>
+
+      <p style="max-width:640px;line-height:1.75;font-size:15.5px;">I am a guest researcher at the BASIRA Lab, Imperial College London, under the supervision of Prof. Islem Rekik. Additionally, I am a part-time research intern at the Multimodal Intelligence Lab, University of Exeter, where I am supervised by Prof. Zeyu Fu. Before that, I graduated with a master's degree in Biomedical Engineering from Shahed University, Iran, under the supervision of Prof. Ali Motie Nasrabadi, where I ranked 1st among graduate students and was selected as an outstanding researcher.</p>
+      <p style="max-width:640px;line-height:1.75;font-size:15.5px;">I am deeply fascinated by multi-modal LLMs and their applications in medical imaging. Building on my previous work in multi-task federated learning, my recent research focuses on retrieval-based methods, aiming to advance the factuality, adaptability, and trustworthiness of next-generation vision-language models.</p>
+
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:var(--space-3);">
+        <a href="https://scholar.google.com/citations?hl=en&user=pq1e3SMAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>Scholar</a>
+        <a href="https://github.com/HassaniAtefe" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729 1.205.084 1.84 1.238 1.84 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.775.42-1.305.763-1.605-2.665-.303-5.467-1.332-5.467-5.93 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.51 11.51 0 0 1 3.003-.404c1.02.005 2.047.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.696.825.577C20.565 21.795 24 17.297 24 12c0-6.627-5.373-12-12-12z"></path></svg>GitHub</a>
+        <a href="https://twitter.com/hassaniatefe" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>Twitter</a>
+      </div>
+    </div>
+
+    <figure class="washed" style="border-radius:var(--radius-lg);overflow:hidden;margin:0;">
+      <img src="images/photo.jpg" alt="Alireza Salemi" style="width:100%;display:block;">
+    </figure>
+  </section>
+
+  <section style="max-width:1100px;margin:0 auto;padding:0 var(--space-4) var(--space-8);">
+    <h2 style="font-size:26px;margin-bottom:var(--space-4);">Research</h2>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4);">
+      <sc-for list="{{ researchAreas }}" as="area" hint-placeholder-count="4">
+        <div class="card elev-sm">
+          <div class="card-kicker">{{ area.topic }}</div>
+          <p class="card-body">{{ area.desc }}</p>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;">
+            <sc-for list="{{ area.papers }}" as="paper" hint-placeholder-count="3">
+              <a href="{{ paper.href }}" class="tag tag-outline">{{ paper.label }}</a>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width:1100px;margin:0 auto;padding:0 var(--space-4) var(--space-8);">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:var(--space-4);">
+      <h2 style="font-size:26px;margin:0;">News</h2>
+      <a href="news.dc.html">All news &rarr;</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:var(--space-3);">
+      <sc-for list="{{ newsPreview }}" as="item" hint-placeholder-count="5">
+        <div style="display:grid;grid-template-columns:100px 1fr;gap:var(--space-3);border-bottom:1px solid var(--color-divider);padding-bottom:var(--space-2);">
+          <span style="opacity:0.55;font-size:12px;text-transform:uppercase;letter-spacing:0.04em;">{{ item.date }}</span>
+          <span dangerouslySetInnerHTML="{{ item.html }}" style="font-size:14.5px;line-height:1.5;"></span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width:1100px;margin:0 auto;padding:0 var(--space-4) var(--space-8);">
+    <h2 style="font-size:26px;margin-bottom:var(--space-4);">Explore</h2>
+    <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;">
+      <a class="btn btn-secondary" href="publications.dc.html">Publications</a>
+      <a class="btn btn-secondary" href="projects.dc.html">Projects</a>
+      <a class="btn btn-secondary" href="experience.dc.html">Experience</a>
+      <a class="btn btn-secondary" href="awards.dc.html">Awards</a>
+      <a class="btn btn-secondary" href="talks.dc.html">Talks</a>
+      <a class="btn btn-secondary" href="service.dc.html">Service</a>
+      <a class="btn btn-secondary" href="blog.dc.html">Blog</a>
+      <a class="btn btn-secondary" href="hobbies.dc.html">Hobbies</a>
+    </div>
+  </section>
+</main>
+
+<dc-import name="Footer" hint-size="100%,200px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280},&quot;showJobMarket&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Behavior&quot;}}">
+class Component extends DCLogic {
+  state = { news: [], research: [] };
+
+  componentDidMount() {
+    Promise.all([
+      fetch('data/news.json').then(r => r.json()),
+      fetch('data/research-areas.json').then(r => r.json()),
+    ]).then(([news, research]) => this.setState({ news, research }))
+      .catch(err => console.error('Failed to load home data:', err));
+  }
+
+  renderVals() {
+    const newsPreview = this.state.news.slice(0, 5).map(n => ({ date: n.date, html: { __html: n.text } }));
+    const researchAreas = this.state.research.map(area => ({
+      topic: area.topic,
+      desc: area.desc,
+      papers: area.papers.map(p => ({ label: p.label, href: 'paper.dc.html?slug=' + p.slug })),
+    }));
+    return {
+      newsPreview,
+      researchAreas,
+      showJobMarket: this.props.showJobMarket ?? false,
+    };
+  }
+}
+</script>
+</body>
+</html>

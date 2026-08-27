@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "welcome",
+    "date": "Placeholder",
+    "title": "Welcome to my blog",
+    "excerpt": "A placeholder first post — replace with your own writing.",
+    "paragraphs": [
+      "This is a sample post standing in for a real one. Use it to see how the blog page looks with a title, a date, and a few paragraphs of body text.",
+      "Swap this out for your own writing whenever you're ready — the layout, typography, and spacing will carry over."
+    ]
+  },
+  {
+    "slug": "how-i-write",
+    "date": "Placeholder",
+    "title": "How I write",
+    "excerpt": "A second placeholder post to preview a two-post list.",
+    "paragraphs": [
+      "Another stand-in post. Two posts are here mainly to show how the blog list looks with more than one entry, and how a longer body reads on the post page.",
+      "Edit the text directly in data/blog.json, or ask for a new post to be added."
+    ]
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "slug": "unifed",
+    "year": 2024,
+    "title": "UniFed: A Universal Federation of a Mixture of Highly Heterogeneous Medical Image Classification Tasks",
+    "authors": [
+      "Atefe Hassani",
+      "Islem Rekik"
+    ],
+    "venue": "MLMI @ MICCAI 2024",
+    "venueType": "conference",
+    "topics": [
+      "Federated Learning",
+      "Medical Imaging"
+    ],
+    "links": {
+      "paper": "https://arxiv.org/pdf/2408.07075",
+      "code": "https://github.com/basiralab/UniFed",
+      "video": "https://youtu.be/_ctzgmxt4fE?si=xRaQWoFm54mFcQVj"
+    }
+  },
+  {
+    "slug": "tdcs-mci",
+    "year": 2024,
+    "title": "Anodal HD-tDCS on the dominant anterior temporal lobe and dorsolateral prefrontal cortex: clinical results in patients with mild cognitive impairment",
+    "authors": [
+      "Soheila Rezakhani",
+      "Amiri Mahmood",
+      "Atefe Hassani",
+      "Khadijeh Esmaeilpour",
+      "Vahid Sheibani"
+    ],
+    "venue": "Alzheimer's Research & Therapy",
+    "venueType": "journal",
+    "topics": [
+      "Neuroscience"
+    ],
+    "links": {
+      "paper": "https://link.springer.com/article/10.1186/s13195-023-01370-y",
+      "doi": "https://doi.org/10.1186/s13195-023-01370-y"
+    }
+  },
+  {
+    "slug": "gender-eeg-neuromarketing",
+    "year": 2023,
+    "title": "Gender Differences in EEG Responses to Color and Black-White Images: Implications for Neuromarketing Strategies",
+    "authors": [
+      "Atefe Hassani",
+      "Amin Hekmatmanesh",
+      "Ali Motie Nasrabadi"
+    ],
+    "venue": "IEEE Access",
+    "venueType": "journal",
+    "topics": [
+      "Neuroscience",
+      "Neuromarketing"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10230236",
+      "doi": "https://doi.org/10.1109/ACCESS.2023.3308810"
+    }
+  },
+  {
+    "slug": "medial-septum-hippocampal",
+    "year": 2023,
+    "title": "The impact of selective and non-selective medial septum stimulation on hippocampal neuronal oscillations: A study based on modeling and experiments",
+    "authors": [
+      "Nima Salimi-Nezhad",
+      "Stephan Missault",
+      "Anaïs Notario-Reinoso",
+      "Atefe Hassani",
+      "Mahmood Amiri",
+      "Georgios A Keliris"
+    ],
+    "venue": "Neurobiology of Disease",
+    "venueType": "journal",
+    "topics": [
+      "Neuroscience"
+    ],
+    "links": {
+      "paper": "https://www.sciencedirect.com/science/article/pii/S0969996123000669",
+      "doi": "https://doi.org/10.1016/j.nbd.2023.106052"
+    }
+  },
+  {
+    "slug": "neuromarketing-shopping-gender",
+    "year": 2022,
+    "title": "Discrimination of Customers Decision-Making in a Like/Dislike Shopping Activity Based on Genders: A Neuromarketing Study",
+    "authors": [
+      "Atefe Hassani",
+      "Amin Hekmatmanesh",
+      "Ali Motie Nasrabadi"
+    ],
+    "venue": "IEEE Access",
+    "venueType": "journal",
+    "topics": [
+      "Neuromarketing",
+      "Neuroscience"
+    ],
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/9867935",
+      "doi": "https://doi.org/10.1109/ACCESS.2022.3201488"
+    }
+  },
+  {
+    "slug": "ppg-blood-pressure",
+    "year": 2019,
+    "title": "Improved PPG-based estimation of the blood pressure using latent space features",
+    "authors": [
+      "Atefe Hassani",
+      "Amir Hossein Foruzan"
+    ],
+    "venue": "Signal, Image and Video Processing",
+    "venueType": "journal",
+    "topics": [
+      "Signal Processing"
+    ],
+    "links": {
+      "paper": "https://link.springer.com/article/10.1007/s11760-019-01460-1",
+      "doi": "https://doi.org/10.1007/s11760-019-01460-1"
+    }
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "topic": "Multimodal LLMs & Medical Imaging",
+    "desc": "Retrieval-based methods that advance the factuality, adaptability, and trustworthiness of next-generation vision-language models.",
+    "papers": [
+      {
+        "label": "UniFed",
+        "slug": "unifed"
+      }
+    ]
+  },
+  {
+    "topic": "Federated Learning",
+    "desc": "Multi-task federated learning across highly heterogeneous medical image classification tasks.",
+    "papers": [
+      {
+        "label": "UniFed",
+        "slug": "unifed"
+      }
+    ]
+  },
+  {
+    "topic": "Neuroscience & Signal Processing",
+    "desc": "EEG-based neuromarketing, tDCS clinical studies, and physiological signal modeling from earlier graduate research.",
+    "papers": [
+      {
+        "label": "EEG & Neuromarketing",
+        "slug": "gender-eeg-neuromarketing"
+      },
+      {
+        "label": "tDCS & MCI",
+        "slug": "tdcs-mci"
+      },
+      {
+        "label": "PPG Blood Pressure",
+        "slug": "ppg-blood-pressure"
+      }
+    ]
+  }
+]

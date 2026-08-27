@@ -1,0 +1,24 @@
+[
+  {
+    "name": "AI or Not? AI Generated Images Detector",
+    "featured": true,
+    "caption": "Implementing a training pipeline to discern AI-generated images, using the 'aiornot' dataset for image classification. Fine-tunes a Vision Transformer (ViT), a model introduced by researchers at Google Brain.",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/HassaniAtefe/ai-or-not"
+      }
+    ]
+  },
+  {
+    "name": "Federated Learning Notes",
+    "featured": true,
+    "caption": "Federated learning is a decentralized machine learning approach where model training occurs across multiple edge devices or servers holding local data, preserving data privacy. Notes covering recent variants of the approach.",
+    "links": [
+      {
+        "label": "Blog",
+        "url": "https://oil-winter-a09.notion.site/Learning-about-federated-learning-all-recent-variants-70f04e0ce81444e4a810f9bac49f4f65?pvs=4"
+      }
+    ]
+  }
+]
