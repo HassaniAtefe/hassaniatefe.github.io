@@ -8,7 +8,7 @@
 <body>
 <x-dc>
 <header class="nav" style="position:sticky;top:0;z-index:50;background:var(--color-bg);border-bottom:1px solid var(--color-divider);flex-wrap:wrap;row-gap:8px;">
-  <a href="{{ homeHref }}" class="nav-brand" style="text-decoration:none;color:var(--color-text);">Atefe Hassani</a>
+  <a href="{{ homeHref }}" class="nav-brand">Atefe Hassani</a>
   <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;margin-left:auto;">
     <sc-for list="{{ links }}" as="link" hint-placeholder-count="8">
       <a href="{{ link.href }}" style="{{ link.style }}">{{ link.label }}</a>
