@@ -58,12 +58,12 @@
     body { margin: 0; }
     a { color: var(--color-accent-700); text-decoration: none; transition: color 0.2s ease; }
     a:hover { color: var(--color-accent); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
-    main a:not(.tag):not(.btn):not(.card), footer a:not(.tag):not(.btn):not(.card) {
+    main a:not(.tag):not(.btn):not(.card), footer a:not(.tag):not(.btn):not(.card), .nav a {
       background-image: linear-gradient(var(--color-accent), var(--color-accent));
       background-position: 0 100%; background-repeat: no-repeat; background-size: 100% 1.5px;
       transition: background-size 0.2s ease;
     }
-    main a:not(.tag):not(.btn):not(.card):hover, footer a:not(.tag):not(.btn):not(.card):hover {
+    main a:not(.tag):not(.btn):not(.card):hover, footer a:not(.tag):not(.btn):not(.card):hover, .nav a:hover {
       background-size: 100% 100%;
       background-image: linear-gradient(color-mix(in srgb, var(--color-accent) 20%, transparent), color-mix(in srgb, var(--color-accent) 20%, transparent));
     }
