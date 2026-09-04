@@ -219,7 +219,7 @@ textarea.input { min-height: 90px; resize: vertical; }
   font-size: 18px; margin-right: auto;
 }
 .nav a { font-size: 14px; position: relative; }
-.nav a:hover { text-decoration: none; }
+.nav a:hover { text-decoration: none; background: color-mix(in srgb, var(--color-accent) 20%, transparent); }
 .nav a::after {
   content: "";
   position: absolute; left: 0; right: 0; bottom: -3px;
