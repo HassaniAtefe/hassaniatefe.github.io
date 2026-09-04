@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
+<script src="./theme.js"></script>
 </head>
 <body>
 <x-dc>
@@ -22,7 +23,7 @@
       --color-text: #2a3538;
       --color-accent: #5b9bb0;
       --color-accent-2: #c9a13a;
-      --color-divider: color-mix(in srgb, #2a3538 16%, transparent);
+      --color-divider: color-mix(in srgb, var(--color-text) 16%, transparent);
 
       --color-neutral-100: #f7fafb;
       --color-neutral-200: #eaf1f4;
@@ -34,25 +35,25 @@
       --color-neutral-800: #38474e;
       --color-neutral-900: #232c30;
 
-      --color-accent-100: #eef7fa;
-      --color-accent-200: #d7edf3;
-      --color-accent-300: #b8dfe9;
-      --color-accent-400: #8fc3d4;
-      --color-accent-500: #5b9bb0;
-      --color-accent-600: #457f92;
-      --color-accent-700: #336577;
-      --color-accent-800: #234a58;
-      --color-accent-900: #16323d;
+      --color-accent-100: color-mix(in oklch, white 88%, var(--color-accent));
+      --color-accent-200: color-mix(in oklch, white 74%, var(--color-accent));
+      --color-accent-300: color-mix(in oklch, white 55%, var(--color-accent));
+      --color-accent-400: color-mix(in oklch, white 28%, var(--color-accent));
+      --color-accent-500: var(--color-accent);
+      --color-accent-600: color-mix(in oklch, black 18%, var(--color-accent));
+      --color-accent-700: color-mix(in oklch, black 35%, var(--color-accent));
+      --color-accent-800: color-mix(in oklch, black 55%, var(--color-accent));
+      --color-accent-900: color-mix(in oklch, black 72%, var(--color-accent));
 
-      --color-accent-2-100: #fdf9ee;
-      --color-accent-2-200: #faf0d6;
-      --color-accent-2-300: #f3e2af;
-      --color-accent-2-400: #e8cd7c;
-      --color-accent-2-500: #c9a13a;
-      --color-accent-2-600: #a67f2a;
-      --color-accent-2-700: #82631f;
-      --color-accent-2-800: #5c4716;
-      --color-accent-2-900: #3a2d0e;
+      --color-accent-2-100: color-mix(in oklch, white 88%, var(--color-accent-2));
+      --color-accent-2-200: color-mix(in oklch, white 74%, var(--color-accent-2));
+      --color-accent-2-300: color-mix(in oklch, white 55%, var(--color-accent-2));
+      --color-accent-2-400: color-mix(in oklch, white 28%, var(--color-accent-2));
+      --color-accent-2-500: var(--color-accent-2);
+      --color-accent-2-600: color-mix(in oklch, black 18%, var(--color-accent-2));
+      --color-accent-2-700: color-mix(in oklch, black 35%, var(--color-accent-2));
+      --color-accent-2-800: color-mix(in oklch, black 55%, var(--color-accent-2));
+      --color-accent-2-900: color-mix(in oklch, black 72%, var(--color-accent-2));
     }
     html[data-theme="dark"] { --color-bg: var(--color-neutral-900); --color-surface: var(--color-neutral-800); --color-text: var(--color-neutral-100); --color-divider: color-mix(in srgb, var(--color-neutral-100) 18%, transparent); }
     body { margin: 0; }

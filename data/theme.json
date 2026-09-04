@@ -1,0 +1,15 @@
+{
+  "colors": {
+    "background": "#eaf3f6",
+    "surface": "#dcebef",
+    "text": "#2a3538",
+    "accent": "#5b9bb0",
+    "accent2": "#c9a13a"
+  },
+  "fonts": {
+    "heading": "'Spectral', serif",
+    "headingWeight": 600,
+    "body": "'Karla', sans-serif",
+    "baseSize": "15px"
+  }
+}
