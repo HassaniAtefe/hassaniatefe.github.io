@@ -10,26 +10,32 @@
       var f = (theme && theme.fonts) || {};
 
       // bg/surface/text are also overridden by html[data-theme="dark"] in
-      // each page's own <style> block. No !important here, so this plain
-      // :root rule still loses to that more-specific dark-mode selector -
-      // it only needs to beat the page's own plain :root, which it does by
-      // coming later in the document.
+      // each page's own <style> block. The page re-fetches its own HTML
+      // asynchronously (for the dc-runtime's own hot-reload plumbing),
+      // which races this fetch - whichever <style> tag lands in <head>
+      // last wins at equal specificity, and that race isn't something to
+      // depend on. So this uses !important, scoped to :not([data-theme=
+      // "dark"]) - it simply doesn't match at all while dark mode is on
+      // (selector matching is live, so this also reacts correctly if dark
+      // mode is toggled after load), leaving the dark-mode rule untouched
+      // instead of trying to out-specificity or out-order it.
       var themable = [];
-      if (c.background) themable.push('--color-bg:' + c.background);
-      if (c.surface) themable.push('--color-surface:' + c.surface);
-      if (c.text) themable.push('--color-text:' + c.text);
+      if (c.background) themable.push('--color-bg:' + c.background + ' !important');
+      if (c.surface) themable.push('--color-surface:' + c.surface + ' !important');
+      if (c.text) themable.push('--color-text:' + c.text + ' !important');
 
-      // accent/accent2/fonts don't change with dark mode, so !important is
-      // safe here and guarantees they win regardless of load timing.
+      // accent/accent2/hover/fonts don't change with dark mode, so plain
+      // :root + !important is fine - no light/dark distinction needed.
       var forced = [];
       if (c.accent) forced.push('--color-accent:' + c.accent + ' !important');
       if (c.accent2) forced.push('--color-accent-2:' + c.accent2 + ' !important');
+      if (c.hover) forced.push('--color-hover:' + c.hover + ' !important');
       if (f.heading) forced.push('--font-heading:' + f.heading + ' !important');
       if (f.headingWeight) forced.push('--font-heading-weight:' + f.headingWeight + ' !important');
       if (f.body) forced.push('--font-body:' + f.body + ' !important');
 
       var css = '';
-      if (themable.length) css += ':root {' + themable.join(';') + ';}';
+      if (themable.length) css += 'html:not([data-theme="dark"]) {' + themable.join(';') + ';}';
       if (forced.length) css += ':root {' + forced.join(';') + ';}';
       if (f.baseSize) css += 'body {font-size:' + f.baseSize + ' !important;}';
       if (!css) return;

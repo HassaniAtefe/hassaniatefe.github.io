@@ -206,7 +206,7 @@ textarea.input { min-height: 90px; resize: vertical; }
 .tag-accent-2 { background: var(--color-accent-2-100); color: var(--color-accent-2-800); }
 .tag-neutral { background: var(--color-neutral-100); color: var(--color-neutral-800); }
 .tag-outline { border: 1px solid var(--color-accent); color: var(--color-accent); transition: background-color 0.2s ease; }
-.tag-outline:hover { background: color-mix(in srgb, var(--color-accent) 18%, transparent); text-decoration: underline; }
+.tag-outline:hover { background: color-mix(in srgb, var(--color-hover) 18%, transparent); text-decoration: underline; }
 
 /* — navigation — */
 .nav {
@@ -219,11 +219,11 @@ textarea.input { min-height: 90px; resize: vertical; }
   font-size: 18px; margin-right: auto;
 }
 .nav a { font-size: 14px; position: relative; }
-.nav a:hover { text-decoration: none; background: color-mix(in srgb, var(--color-accent) 20%, transparent); }
+.nav a:hover { text-decoration: none; background: color-mix(in srgb, var(--color-hover) 20%, transparent); }
 .nav a::after {
   content: "";
   position: absolute; left: 0; right: 0; bottom: -3px;
-  height: 1.5px; background: var(--color-accent);
+  height: 1.5px; background: var(--color-hover);
   transform: scaleX(0); transform-origin: left center;
   transition: transform 0.25s ease;
 }

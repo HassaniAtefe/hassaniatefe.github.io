@@ -1,10 +1,11 @@
 {
   "colors": {
-    "background": "#FFFFF2",
+    "background": "#ffffff",
     "surface": "#dcebef",
     "text": "#2a3538",
     "accent": "#5b9bb0",
-    "accent2": "#c9a13a"
+    "accent2": "#c9a13a",
+    "hover": "#d4a017"
   },
   "fonts": {
     "heading": "'Spectral', serif",
