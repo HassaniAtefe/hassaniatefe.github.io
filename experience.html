@@ -80,15 +80,21 @@
     <sc-for list="{{ items }}" as="item" hint-placeholder-count="4">
       <div style="display:grid;grid-template-columns:200px 1fr;gap:var(--space-4);padding:var(--space-4) 0;border-bottom:1px solid var(--color-divider);">
         <div>
-          <div style="font-weight:700;">{{ item.org }}</div>
+          <div style="font-weight:700;" dangerouslySetInnerHTML="{{ item.orgHtml }}"></div>
+          <sc-if value="{{ item.location }}"><div style="opacity:0.6;font-size:13px;margin-top:2px;">{{ item.location }}</div></sc-if>
           <div style="opacity:0.6;font-size:13px;">{{ item.date }}</div>
         </div>
         <div>
           <div style="font-family:var(--font-heading);font-size:17px;margin-bottom:4px;">{{ item.role }}</div>
-          <sc-if value="{{ item.supervisor }}">
-            <p style="opacity:0.7;font-style:italic;font-size:14px;margin:0 0 6px;">Supervised by {{ item.supervisor }}</p>
+          <sc-if value="{{ item.supervisorHtml }}">
+            <p style="opacity:0.7;font-style:italic;font-size:14px;margin:0 0 6px;">Supervised by <span dangerouslySetInnerHTML="{{ item.supervisorHtml }}"></span></p>
           </sc-if>
-          <p style="opacity:0.85;font-size:14.5px;line-height:1.6;margin:0;">{{ item.desc }}</p>
+          <sc-if value="{{ item.projectHtml }}">
+            <p style="opacity:0.7;font-style:italic;font-size:14px;margin:0 0 6px;">Project: <span dangerouslySetInnerHTML="{{ item.projectHtml }}"></span></p>
+          </sc-if>
+          <sc-if value="{{ item.desc }}">
+            <p style="opacity:0.85;font-size:14.5px;line-height:1.6;margin:0;">{{ item.desc }}</p>
+          </sc-if>
         </div>
       </div>
     </sc-for>
@@ -104,7 +110,18 @@ class Component extends DCLogic {
     fetch('data/experience.json').then(r => r.json()).then(items => this.setState({ items }))
       .catch(err => console.error('Failed to load experience:', err));
   }
-  renderVals() { return { items: this.state.items }; }
+  linkOrText(text, url) {
+    return url ? `<a href="${url}" target="_blank" rel="noopener">${text}</a>` : text;
+  }
+  renderVals() {
+    const items = this.state.items.map(item => ({
+      ...item,
+      orgHtml: { __html: this.linkOrText(item.org, item.orgUrl) },
+      supervisorHtml: item.supervisor ? { __html: this.linkOrText(item.supervisor, item.supervisorUrl) } : null,
+      projectHtml: item.project ? { __html: this.linkOrText(item.project, item.projectUrl) } : null,
+    }));
+    return { items };
+  }
 }
 </script>
 </body>

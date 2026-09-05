@@ -1,9 +1,29 @@
 [
   {
+    "org": "Motion Modelling & Analysis Group (MMAG), King's College London",
+    "orgUrl": "https://www.kcl.ac.uk/",
+    "location": "London, UK",
+    "date": "Sep. 2025 – Now",
+    "role": "Research Associate",
+    "supervisor": "Prof. Andrew King",
+    "supervisorUrl": "https://www.kclmmag.org/team/andrew-king",
+    "project": "Fairness without Demographics in VLMs"
+  },
+  {
+    "org": "School of AI, Pi School",
+    "orgUrl": "https://picampus-school.com/programme/school-of-artificial-intelligence/",
+    "location": "Rome, Italy",
+    "date": "June. 2025 – Sep. 2025",
+    "role": "AI Fellow",
+    "project": "Near Real-time Machine Translation",
+    "projectUrl": "https://www.youtube.com/watch?v=GdhEb0RgjHQ&t=3597s"
+  },
+  {
     "org": "BASIRA Lab, Imperial College London",
     "date": "Current",
     "role": "Guest Researcher",
     "supervisor": "Prof. Islem Rekik",
+    "supervisorUrl": "https://scholar.google.com/citations?hl=en&user=tb6CVoAAAAAJ&view_op=list_works&sortby=pubdate",
     "desc": "Researching multi-task federated learning across highly heterogeneous medical image classification tasks."
   },
   {
