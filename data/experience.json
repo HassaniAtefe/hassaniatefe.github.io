@@ -49,5 +49,16 @@
     "supervisor": "Prof. Islem Rekik",
     "supervisorUrl": "https://scholar.google.com/citations?hl=en&user=tb6CVoAAAAAJ&view_op=list_works&sortby=pubdate",
     "project": "Federated Multi-Task Learning on Heterogeneous Medical Images"
+  },
+  {
+    "org": "COMP0173: AI for Sustainable Development",
+    "institution": "University College London (UCL)",
+    "institutionUrl": "https://www.ucl.ac.uk/",
+    "institutionLogo": "images/logos/ucl.svg",
+    "location": "London, UK",
+    "date": "2023 – 2024",
+    "role": "Teaching Assistant",
+    "supervisor": "Dr. Maria Perez Ortiz",
+    "supervisorUrl": "https://scholar.google.com/citations?hl=en&user=s0Aou04AAAAJ&view_op=list_works&sortby=pubdate"
   }
 ]
