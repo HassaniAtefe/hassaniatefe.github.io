@@ -44,7 +44,7 @@ class Component extends DCLogic {
     ];
     const links = items.map(([key, label]) => ({
       key, label, href: key + '.html',
-      style: (file === key) ? { color: 'var(--color-accent)', fontWeight: 700 } : {},
+      style: (file === key) ? { color: 'var(--color-hover)', fontWeight: 700 } : {},
     }));
     return {
       homeHref: 'index.html',

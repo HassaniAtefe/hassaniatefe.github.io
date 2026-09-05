@@ -144,8 +144,8 @@ figcaption {
 .input {
   width: 100%; min-height: 36px; padding: 6px 10px; font: inherit;
   font-size: 14px; color: var(--color-text); caret-color: var(--color-accent);
-  background: var(--color-surface);
-  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
+  background: var(--color-bg);
+  border: 1px solid var(--color-text); border-radius: var(--radius-md);
 }
 .input:hover { border-color: color-mix(in srgb, var(--color-text) 45%, transparent); }
 .input:focus-visible { border-color: var(--color-accent); outline-offset: 0; }
@@ -202,10 +202,10 @@ textarea.input { min-height: 90px; resize: vertical; }
   letter-spacing: 0.02em; padding: 3px 10px;
   border-radius: calc(var(--radius-md) * 0.75);
 }
-.tag-accent { background: var(--color-accent-100); color: var(--color-accent-800); }
+.tag-accent { background: var(--color-bg); color: var(--color-text); border: 1px solid var(--color-text); }
 .tag-accent-2 { background: var(--color-accent-2-100); color: var(--color-accent-2-800); }
 .tag-neutral { background: var(--color-neutral-100); color: var(--color-neutral-800); }
-.tag-outline { border: 1px solid var(--color-accent); color: var(--color-accent); transition: background-color 0.2s ease; }
+.tag-outline { border: 1px solid var(--color-text); color: var(--color-text); background: var(--color-bg); transition: background-color 0.2s ease; }
 .tag-outline:hover { background: color-mix(in srgb, var(--color-hover) 18%, transparent); text-decoration: underline; }
 
 /* — navigation — */
