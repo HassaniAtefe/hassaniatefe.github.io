@@ -1,6 +1,6 @@
 [
   {
-    "org": "Motion Modelling & Analysis Group (MMAG)",
+    "org": "MMAG",
     "orgUrl": "https://www.kclmmag.org/",
     "institution": "King's College London",
     "institutionUrl": "https://www.kcl.ac.uk/",
@@ -25,7 +25,7 @@
     "projectUrl": "https://www.youtube.com/watch?v=GdhEb0RgjHQ&t=3597s"
   },
   {
-    "org": "Multimodal Intelligence Lab",
+    "org": "MMI Lab",
     "orgUrl": "https://experts.exeter.ac.uk/39170-zeyu-fu",
     "institution": "University of Exeter",
     "institutionUrl": "https://www.exeter.ac.uk/",
@@ -51,7 +51,6 @@
     "project": "Federated Multi-Task Learning on Heterogeneous Medical Images"
   },
   {
-    "org": "COMP0173: AI for Sustainable Development",
     "institution": "University College London (UCL)",
     "institutionUrl": "https://www.ucl.ac.uk/",
     "institutionLogo": "images/logos/ucl.svg",
@@ -59,6 +58,7 @@
     "date": "2023 – 2024",
     "role": "Teaching Assistant",
     "supervisor": "Dr. Maria Perez Ortiz",
-    "supervisorUrl": "https://scholar.google.com/citations?hl=en&user=s0Aou04AAAAJ&view_op=list_works&sortby=pubdate"
+    "supervisorUrl": "https://scholar.google.com/citations?hl=en&user=s0Aou04AAAAJ&view_op=list_works&sortby=pubdate",
+    "project": "COMP0173: AI for Sustainable Development"
   }
 ]

@@ -85,7 +85,9 @@
           </sc-if>
         </div>
         <div>
-          <div style="font-weight:700;" dangerouslySetInnerHTML="{{ item.orgHtml }}"></div>
+          <sc-if value="{{ item.orgHtml }}">
+            <div style="font-weight:700;" dangerouslySetInnerHTML="{{ item.orgHtml }}"></div>
+          </sc-if>
           <div style="font-family:var(--font-heading);font-size:17px;margin-top:2px;">{{ item.role }}</div>
           <sc-if value="{{ item.location }}"><div style="opacity:0.6;font-size:13px;margin-top:6px;">{{ item.location }}</div></sc-if>
           <div style="opacity:0.6;font-size:13px;">{{ item.date }}</div>
@@ -121,14 +123,14 @@ class Component extends DCLogic {
   institutionHtml(item) {
     if (!item.institution) return null;
     const inner = item.institutionLogo
-      ? `<img src="${item.institutionLogo}" alt="${item.institution}" style="max-height:34px;max-width:180px;width:auto;height:auto;display:block;">`
+      ? `<img src="${item.institutionLogo}" alt="${item.institution}" style="max-height:46px;max-width:180px;width:auto;height:auto;display:block;">`
       : item.institution;
     return { __html: this.linkOrText(inner, item.institutionUrl) };
   }
   renderVals() {
     const items = this.state.items.map(item => ({
       ...item,
-      orgHtml: { __html: this.linkOrText(item.org, item.orgUrl) },
+      orgHtml: item.org ? { __html: this.linkOrText(item.org, item.orgUrl) } : null,
       institutionHtml: this.institutionHtml(item),
       supervisorHtml: item.supervisor ? { __html: this.linkOrText(item.supervisor, item.supervisorUrl) } : null,
       projectHtml: item.project ? { __html: this.linkOrText(item.project, item.projectUrl) } : null,
