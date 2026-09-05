@@ -124,9 +124,9 @@ figcaption {
 .btn:hover { text-decoration: none; }
 .btn svg { display: block; }
 .btn:disabled { opacity: 0.45; cursor: not-allowed; }
-.btn-primary { background: var(--color-accent); color: var(--color-bg); }
-.btn-primary:hover { background: var(--color-accent-600); }
-.btn-primary:active { background: var(--color-accent-700); }
+.btn-primary { background: var(--color-hover); color: var(--color-text); }
+.btn-primary:hover { background: color-mix(in srgb, white 15%, var(--color-hover)); }
+.btn-primary:active { background: color-mix(in srgb, black 15%, var(--color-hover)); }
 .btn-secondary { border-color: var(--color-divider); }
 .btn-secondary:hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
 .btn-secondary:active { background: color-mix(in srgb, var(--color-text) 14%, transparent); }
@@ -218,6 +218,7 @@ textarea.input { min-height: 90px; resize: vertical; }
   font-family: var(--font-heading); font-weight: var(--font-heading-weight);
   font-size: 18px; margin-right: auto;
 }
+.nav a, .nav a:hover { color: var(--color-text); }
 .nav a { font-size: 14px; position: relative; }
 .nav a:hover { text-decoration: none; background: color-mix(in srgb, var(--color-hover) 20%, transparent); }
 .nav a::after {
