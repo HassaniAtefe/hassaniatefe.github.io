@@ -19,11 +19,15 @@
     "projectUrl": "https://www.youtube.com/watch?v=GdhEb0RgjHQ&t=3597s"
   },
   {
-    "org": "Multimodal Intelligence Lab, University of Exeter",
+    "org": "Multimodal Intelligence Lab",
+    "orgUrl": "https://experts.exeter.ac.uk/39170-zeyu-fu",
+    "institution": "University of Exeter",
+    "institutionUrl": "https://www.exeter.ac.uk/",
     "location": "Exeter, UK",
     "date": "Feb. 2025 – June. 2025",
     "role": "Research Assistant",
     "supervisor": "Prof. Zeyu Fu",
+    "supervisorUrl": "https://scholar.google.com/citations?hl=en&user=jVMQbI8AAAAJ&view_op=list_works&sortby=pubdate",
     "project": "Multimodal LVLMs in Healthcare"
   },
   {
@@ -35,37 +39,5 @@
     "supervisor": "Prof. Islem Rekik",
     "supervisorUrl": "https://scholar.google.com/citations?hl=en&user=tb6CVoAAAAAJ&view_op=list_works&sortby=pubdate",
     "project": "Federated Multi-Task Learning on Heterogeneous Medical Images"
-  },
-  {
-    "org": "Fatima Fellowship",
-    "location": "Remote",
-    "date": "Apr. 2023 – Dec. 2023",
-    "role": "Research Fellow",
-    "project": "Medical Image Classification using Quaternion Convolutional Neural Networks"
-  },
-  {
-    "org": "Bio-Imaging Lab, Antwerp University",
-    "location": "Antwerp, Belgium",
-    "date": "Aug. 2021 – Feb. 2023",
-    "role": "Research Intern",
-    "supervisor": "Prof. Mahmood Amiri"
-  },
-  {
-    "org": "Biological Signal Processing Lab, Shahed University",
-    "location": "Tehran, Iran",
-    "date": "Aug. 2017 – Sep. 2020",
-    "role": "Research Assistant"
-  },
-  {
-    "org": "Signal and Image Processing Lab, University of Zanjan",
-    "location": "Zanjan, Iran",
-    "date": "Aug. 2016 – Aug. 2017",
-    "role": "Research Assistant"
-  },
-  {
-    "org": "ValiAsar Hospital",
-    "location": "Zanjan, Iran",
-    "date": "Jan. 2016 – Sep. 2016",
-    "role": "Research Intern"
   }
 ]

@@ -113,10 +113,14 @@ class Component extends DCLogic {
   linkOrText(text, url) {
     return url ? `<a href="${url}" target="_blank" rel="noopener">${text}</a>` : text;
   }
+  orgHtml(item) {
+    const org = this.linkOrText(item.org, item.orgUrl);
+    return item.institution ? `${org}, ${this.linkOrText(item.institution, item.institutionUrl)}` : org;
+  }
   renderVals() {
     const items = this.state.items.map(item => ({
       ...item,
-      orgHtml: { __html: this.linkOrText(item.org, item.orgUrl) },
+      orgHtml: { __html: this.orgHtml(item) },
       supervisorHtml: item.supervisor ? { __html: this.linkOrText(item.supervisor, item.supervisorUrl) } : null,
       projectHtml: item.project ? { __html: this.linkOrText(item.project, item.projectUrl) } : null,
     }));
