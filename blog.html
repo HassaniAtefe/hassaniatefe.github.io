@@ -57,10 +57,10 @@
     }
     html[data-theme="dark"] { --color-bg: var(--color-neutral-900); --color-surface: var(--color-neutral-800); --color-text: var(--color-neutral-100); --color-divider: color-mix(in srgb, var(--color-neutral-100) 18%, transparent); }
     body { margin: 0; }
-    a { color: var(--color-accent-700); text-decoration: none; transition: color 0.2s ease; }
+    a { color: var(--color-hover); text-decoration: none; transition: color 0.2s ease; }
     a:hover { color: var(--color-hover); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
     main a:not(.tag):not(.btn):not(.card), footer a:not(.tag):not(.btn):not(.card) {
-      background-image: linear-gradient(var(--color-accent), var(--color-accent));
+      background-image: linear-gradient(var(--color-hover), var(--color-hover));
       background-position: 0 100%; background-repeat: no-repeat; background-size: 100% 1.5px;
       transition: background-size 0.2s ease;
     }
@@ -69,7 +69,7 @@
       background-image: linear-gradient(color-mix(in srgb, var(--color-hover) 20%, transparent), color-mix(in srgb, var(--color-hover) 20%, transparent));
     }
     main a.card { transition: background-color 0.15s ease; }
-    main a.card:hover { text-decoration: none; background: color-mix(in srgb, black 12%, var(--color-hover)); }
+    main a.card:hover { text-decoration: none; background: color-mix(in srgb, var(--color-hover) 45%, var(--color-bg)); }
   </style>
   <script>(function(){ if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); })();</script>
 </helmet>
