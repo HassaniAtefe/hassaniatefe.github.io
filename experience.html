@@ -81,7 +81,8 @@
       <div style="display:grid;grid-template-columns:200px 1fr;gap:var(--space-4);padding:var(--space-4) 0;border-bottom:1px solid var(--color-divider);">
         <div>
           <div style="font-weight:700;" dangerouslySetInnerHTML="{{ item.orgHtml }}"></div>
-          <sc-if value="{{ item.location }}"><div style="opacity:0.6;font-size:13px;margin-top:2px;">{{ item.location }}</div></sc-if>
+          <sc-if value="{{ item.institutionHtml }}"><div style="margin-top:6px;" dangerouslySetInnerHTML="{{ item.institutionHtml }}"></div></sc-if>
+          <sc-if value="{{ item.location }}"><div style="opacity:0.6;font-size:13px;margin-top:6px;">{{ item.location }}</div></sc-if>
           <div style="opacity:0.6;font-size:13px;">{{ item.date }}</div>
         </div>
         <div>
@@ -113,14 +114,18 @@ class Component extends DCLogic {
   linkOrText(text, url) {
     return url ? `<a href="${url}" target="_blank" rel="noopener">${text}</a>` : text;
   }
-  orgHtml(item) {
-    const org = this.linkOrText(item.org, item.orgUrl);
-    return item.institution ? `${org}, ${this.linkOrText(item.institution, item.institutionUrl)}` : org;
+  institutionHtml(item) {
+    if (!item.institution) return null;
+    const inner = item.institutionLogo
+      ? `<img src="${item.institutionLogo}" alt="${item.institution}" style="max-height:28px;max-width:150px;width:auto;height:auto;display:block;">`
+      : item.institution;
+    return { __html: this.linkOrText(inner, item.institutionUrl) };
   }
   renderVals() {
     const items = this.state.items.map(item => ({
       ...item,
-      orgHtml: { __html: this.orgHtml(item) },
+      orgHtml: { __html: this.linkOrText(item.org, item.orgUrl) },
+      institutionHtml: this.institutionHtml(item),
       supervisorHtml: item.supervisor ? { __html: this.linkOrText(item.supervisor, item.supervisorUrl) } : null,
       projectHtml: item.project ? { __html: this.linkOrText(item.project, item.projectUrl) } : null,
     }));

@@ -1,7 +1,10 @@
 [
   {
-    "org": "Motion Modelling & Analysis Group (MMAG), King's College London",
-    "orgUrl": "https://www.kcl.ac.uk/",
+    "org": "Motion Modelling & Analysis Group (MMAG)",
+    "orgUrl": "https://www.kclmmag.org/",
+    "institution": "King's College London",
+    "institutionUrl": "https://www.kcl.ac.uk/",
+    "institutionLogo": "images/logos/kcl.svg",
     "location": "London, UK",
     "date": "Sep. 2025 – Now",
     "role": "Research Intern",
@@ -10,8 +13,11 @@
     "project": "Fairness without Demographics in VLMs"
   },
   {
-    "org": "School of AI, Pi School",
+    "org": "School of AI",
     "orgUrl": "https://picampus-school.com/programme/school-of-artificial-intelligence/",
+    "institution": "Pi School",
+    "institutionUrl": "https://picampus-school.com/",
+    "institutionLogo": "images/logos/pischool.png",
     "location": "Rome, Italy",
     "date": "June. 2025 – Sep. 2025",
     "role": "AI Fellow",
@@ -23,6 +29,7 @@
     "orgUrl": "https://experts.exeter.ac.uk/39170-zeyu-fu",
     "institution": "University of Exeter",
     "institutionUrl": "https://www.exeter.ac.uk/",
+    "institutionLogo": "images/logos/exeter.png",
     "location": "Exeter, UK",
     "date": "Feb. 2025 – June. 2025",
     "role": "Research Assistant",
@@ -31,8 +38,11 @@
     "project": "Multimodal LVLMs in Healthcare"
   },
   {
-    "org": "BASIRA Lab, Imperial College London",
+    "org": "BASIRA Lab",
     "orgUrl": "https://basira-lab.com/",
+    "institution": "Imperial College London",
+    "institutionUrl": "https://www.imperial.ac.uk/",
+    "institutionLogo": "images/logos/imperial.png",
     "location": "London, UK",
     "date": "Sep. 2023 – Sep. 2024",
     "role": "Research Intern",
