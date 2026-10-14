@@ -1,187 +1,117 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-<script src="./theme.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Papers | Atefe Hassani</title>
+  <meta name="description" content="Atefe Hassani — Ph.D. student at the University of Manchester working on multimodal LLM agents in healthcare.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,400&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<x-dc>
-<helmet>
-  <meta name="description" content="Publications by Alireza Salemi.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/styles.css">
-  <script src="_ds/organic-e0649fd3-164a-4b67-b454-afb71cc83849/_ds_bundle.js"></script>
-  <style>
-    :root { --font-heading: "Spectral", serif; --font-heading-weight: 600; --font-body: "Karla", sans-serif; }
-    :root {
-      --color-bg: #eaf3f6;
-      --color-surface: #dcebef;
-      --color-text: #2a3538;
-      --color-accent: #5b9bb0;
-      --color-accent-2: #c9a13a;
-      --color-hover: var(--color-accent);
-      --color-divider: color-mix(in srgb, var(--color-text) 16%, transparent);
-
-      --color-neutral-100: #f7fafb;
-      --color-neutral-200: #eaf1f4;
-      --color-neutral-300: #d3e0e5;
-      --color-neutral-400: #b0c4cc;
-      --color-neutral-500: #8ba2ab;
-      --color-neutral-600: #67818c;
-      --color-neutral-700: #4d626b;
-      --color-neutral-800: #38474e;
-      --color-neutral-900: #232c30;
-
-      --color-accent-100: color-mix(in oklch, white 88%, var(--color-accent));
-      --color-accent-200: color-mix(in oklch, white 74%, var(--color-accent));
-      --color-accent-300: color-mix(in oklch, white 55%, var(--color-accent));
-      --color-accent-400: color-mix(in oklch, white 28%, var(--color-accent));
-      --color-accent-500: var(--color-accent);
-      --color-accent-600: color-mix(in oklch, black 18%, var(--color-accent));
-      --color-accent-700: color-mix(in oklch, black 35%, var(--color-accent));
-      --color-accent-800: color-mix(in oklch, black 55%, var(--color-accent));
-      --color-accent-900: color-mix(in oklch, black 72%, var(--color-accent));
-
-      --color-accent-2-100: color-mix(in oklch, white 88%, var(--color-accent-2));
-      --color-accent-2-200: color-mix(in oklch, white 74%, var(--color-accent-2));
-      --color-accent-2-300: color-mix(in oklch, white 55%, var(--color-accent-2));
-      --color-accent-2-400: color-mix(in oklch, white 28%, var(--color-accent-2));
-      --color-accent-2-500: var(--color-accent-2);
-      --color-accent-2-600: color-mix(in oklch, black 18%, var(--color-accent-2));
-      --color-accent-2-700: color-mix(in oklch, black 35%, var(--color-accent-2));
-      --color-accent-2-800: color-mix(in oklch, black 55%, var(--color-accent-2));
-      --color-accent-2-900: color-mix(in oklch, black 72%, var(--color-accent-2));
-    }
-    html[data-theme="dark"] { --color-bg: var(--color-neutral-900); --color-surface: var(--color-neutral-800); --color-text: var(--color-neutral-100); --color-divider: color-mix(in srgb, var(--color-neutral-100) 18%, transparent); }
-    body { margin: 0; }
-    a { color: var(--color-hover); text-decoration: none; transition: color 0.2s ease; }
-    a:hover { color: var(--color-hover); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
-    main a:not(.tag):not(.btn):not(.card), footer a:not(.tag):not(.btn):not(.card) {
-      background-image: linear-gradient(var(--color-hover), var(--color-hover));
-      background-position: 0 100%; background-repeat: no-repeat; background-size: 100% 1.5px;
-      transition: background-size 0.2s ease;
-    }
-    main a:not(.tag):not(.btn):not(.card):hover, footer a:not(.tag):not(.btn):not(.card):hover {
-      background-size: 100% 100%;
-      background-image: linear-gradient(color-mix(in srgb, var(--color-hover) 20%, transparent), color-mix(in srgb, var(--color-hover) 20%, transparent));
-    }
-  </style>
-  <script>(function(){ if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); })();</script>
-</helmet>
-
-<dc-import name="NavHeader" hint-size="100%,60px"></dc-import>
-
-<main style="max-width:1100px;margin:0 auto;padding:var(--space-8) var(--space-4);">
-  <h1 style="font-size:34px;margin-bottom:6px;">Publications</h1>
-  <p style="opacity:0.75;margin:0 0 var(--space-4);font-size:14.5px;">For the most up-to-date list, see my <a href="https://scholar.google.com/citations?user=dCOLDf4AAAAJ" target="_blank" rel="noopener">Google Scholar profile</a>.</p>
-
-  <div style="display:flex;flex-direction:column;gap:var(--space-3);margin-bottom:var(--space-6);">
-    <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <sc-for list="{{ topicOptions }}" as="opt" hint-placeholder-count="7">
-        <button type="button" class="{{ opt.className }}" onClick="{{ opt.onClick }}">{{ opt.label }}</button>
-      </sc-for>
+<div class="wrap">
+  <nav class="site-nav" aria-label="Primary">
+    <a class="brand" href="index.html">Atefe Hassani</a>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="publications.html" aria-current="page">Papers</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="photos.html">Photos</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1 class="page-title">Papers</h1>
+    <p class="intro">For the most up-to-date list, see my <a href="https://scholar.google.com/citations?hl=en&amp;user=pq1e3SMAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a> profile.</p>
+    <div class="pub-tabs" role="group" aria-label="Filter by topic">
+      <button class="pub-tab" type="button" data-topic="all" aria-pressed="true">All</button>
+      <button class="pub-tab" type="button" data-topic="Medical Imaging" aria-pressed="false">Medical Imaging</button>
+      <button class="pub-tab" type="button" data-topic="Federated Learning" aria-pressed="false">Federated Learning</button>
+      <button class="pub-tab" type="button" data-topic="Neuroscience" aria-pressed="false">Neuroscience</button>
+      <button class="pub-tab" type="button" data-topic="Neuromarketing" aria-pressed="false">Neuromarketing</button>
+      <button class="pub-tab" type="button" data-topic="Signal Processing" aria-pressed="false">Signal Processing</button>
     </div>
-    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:var(--space-3);">
-      <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        <sc-for list="{{ yearOptions }}" as="opt" hint-placeholder-count="6">
-          <button type="button" class="{{ opt.className }}" onClick="{{ opt.onClick }}">{{ opt.label }}</button>
-        </sc-for>
+    <section class="year-group" data-year>
+      <h2 class="year">2024</h2>
+      <div class="pub-list">
+        <article class="pub-card" data-topics="Federated Learning|Medical Imaging">
+          <p class="pub-meta"><span class="venue">MLMI @ MICCAI 2024</span><span class="topic">Federated Learning</span><span class="topic">Medical Imaging</span></p>
+          <h3 class="pub-title">UniFed: A Universal Federation of a Mixture of Highly Heterogeneous Medical Image Classification Tasks</h3>
+          <p class="authors"><strong>Atefe Hassani</strong>, Islem Rekik</p>
+          <div class="pub-links"><a class="pub-link" href="https://arxiv.org/pdf/2408.07075">Paper</a><a class="pub-link" href="https://github.com/basiralab/UniFed">Code</a><a class="pub-link" href="https://youtu.be/_ctzgmxt4fE">Video</a></div>
+        </article>
+        <article class="pub-card" data-topics="Neuroscience">
+          <p class="pub-meta"><span class="venue">Alzheimer's Research &amp; Therapy</span><span class="topic">Neuroscience</span></p>
+          <h3 class="pub-title">Anodal HD-tDCS on the dominant anterior temporal lobe and dorsolateral prefrontal cortex: clinical results in patients with mild cognitive impairment</h3>
+          <p class="authors">Soheila Rezakhani, Amiri Mahmood, <strong>Atefe Hassani</strong>, Khadijeh Esmaeilpour, Vahid Sheibani</p>
+          <div class="pub-links"><a class="pub-link" href="https://link.springer.com/article/10.1186/s13195-023-01370-y">Paper</a><a class="pub-link" href="https://doi.org/10.1186/s13195-023-01370-y">DOI</a></div>
+        </article>
       </div>
-      <input class="input" type="text" placeholder="Search by title, venue, or author..." value="{{ query }}" onChange="{{ onSearch }}" style="max-width:280px;">
-    </div>
-  </div>
-
-  <div style="display:flex;flex-direction:column;gap:14px;">
-    <sc-for list="{{ pubs }}" as="pub" hint-placeholder-count="6">
-      <div class="card elev-sm" style="display:grid;grid-template-columns:1fr auto;gap:12px;">
-        <div>
-          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
-            <span class="{{ pub.venueClass }}">{{ pub.venue }}</span>
-            <sc-if value="{{ pub.award }}">
-              <span class="tag tag-accent-2"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:-1px;margin-right:3px;"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>{{ pub.award }}</span>
-            </sc-if>
-          </div>
-          <div class="card-title" style="margin-bottom:6px;"><a href="{{ pub.href }}">{{ pub.title }}</a></div>
-          <div dangerouslySetInnerHTML="{{ pub.authorsHtml }}" style="font-size:13.5px;opacity:0.8;margin-bottom:8px;"></div>
-          <sc-if value="{{ pub.desc }}"><p class="card-body" style="margin-bottom:8px;">{{ pub.desc }}</p></sc-if>
-          <div style="display:flex;gap:6px;flex-wrap:wrap;">
-            <sc-for list="{{ pub.linkChips }}" as="lnk" hint-placeholder-count="2">
-              <a href="{{ lnk.url }}" target="_blank" rel="noopener" class="tag tag-outline" dangerouslySetInnerHTML="{{ lnk.html }}"></a>
-            </sc-for>
-            <sc-for list="{{ pub.topicChips }}" as="t" hint-placeholder-count="2">
-              <span class="{{ t.className }}">{{ t.label }}</span>
-            </sc-for>
-          </div>
-        </div>
-        <div style="font-size:12px;opacity:0.55;font-weight:700;white-space:nowrap;">{{ pub.year }}</div>
+    </section>
+    <section class="year-group" data-year>
+      <h2 class="year">2023</h2>
+      <div class="pub-list">
+        <article class="pub-card" data-topics="Neuroscience|Neuromarketing">
+          <p class="pub-meta"><span class="venue">IEEE Access</span><span class="topic">Neuroscience</span><span class="topic">Neuromarketing</span></p>
+          <h3 class="pub-title">Gender Differences in EEG Responses to Color and Black-White Images: Implications for Neuromarketing Strategies</h3>
+          <p class="authors"><strong>Atefe Hassani</strong>, Amin Hekmatmanesh, Ali Motie Nasrabadi</p>
+          <div class="pub-links"><a class="pub-link" href="https://ieeexplore.ieee.org/document/10230236">Paper</a><a class="pub-link" href="https://doi.org/10.1109/ACCESS.2023.3308810">DOI</a></div>
+        </article>
+        <article class="pub-card" data-topics="Neuroscience">
+          <p class="pub-meta"><span class="venue">Neurobiology of Disease</span><span class="topic">Neuroscience</span></p>
+          <h3 class="pub-title">The impact of selective and non-selective medial septum stimulation on hippocampal neuronal oscillations: A study based on modeling and experiments</h3>
+          <p class="authors">Nima Salimi-Nezhad, Stephan Missault, Anaïs Notario-Reinoso, <strong>Atefe Hassani</strong>, Mahmood Amiri, Georgios A. Keliris</p>
+          <div class="pub-links"><a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0969996123000669">Paper</a><a class="pub-link" href="https://doi.org/10.1016/j.nbd.2023.106052">DOI</a></div>
+        </article>
       </div>
-    </sc-for>
-    <sc-if value="{{ isEmpty }}">
-      <p style="text-align:center;opacity:0.6;padding:var(--space-8) 0;">No publications match your filters.</p>
-    </sc-if>
-  </div>
-</main>
-
-<dc-import name="Footer" hint-size="100%,200px"></dc-import>
-</x-dc>
-<script type="text/x-dc" data-dc-script>
-const TOPICS = ['Medical Imaging', 'Federated Learning', 'Neuroscience', 'Neuromarketing', 'Signal Processing'];
-const LINK_LABELS = { paper: 'Paper', code: 'Code', website: 'Website', benchmark: 'Benchmark', demo: 'Demo', video: 'Video', doi: 'DOI' };
-
-class Component extends DCLogic {
-  state = { pubs: [], topic: 'all', year: 'all', query: '' };
-
-  componentDidMount() {
-    import('./utils/format.js').then(mod => { this.fmt = mod; this.forceUpdate(); });
-    fetch('data/publications.json').then(r => r.json()).then(pubs => this.setState({ pubs }))
-      .catch(err => console.error('Failed to load publications:', err));
-  }
-
-  setTopic = (t) => this.setState({ topic: t });
-  setYear = (y) => this.setState({ year: y });
-  onSearch = (e) => this.setState({ query: e.target.value });
-
-  authorsHtml(authors) {
-    return authors.map(a => a === 'Alireza Salemi' ? `<strong>${a}</strong>` : a).join(', ');
-  }
-
-  renderVals() {
-    if (!this.fmt) return { pubs: [], topicOptions: [], yearOptions: [], isEmpty: false, query: '' };
-    const { venueTagClass, topicTagClass } = this.fmt;
-    const { topic, year, query } = this.state;
-
-    let filtered = this.state.pubs;
-    if (topic !== 'all') filtered = filtered.filter(p => (p.topics || []).includes(topic));
-    if (year !== 'all') filtered = filtered.filter(p => String(p.year) === year);
-    if (query.trim()) {
-      const q = query.trim().toLowerCase();
-      filtered = filtered.filter(p =>
-        p.title.toLowerCase().includes(q) || p.venue.toLowerCase().includes(q) ||
-        p.authors.some(a => a.toLowerCase().includes(q)) || (p.desc || '').toLowerCase().includes(q));
-    }
-
-    const years = [...new Set(this.state.pubs.map(p => String(p.year)))].sort((a, b) => b - a);
-
-    const topicOptions = [{ label: 'All Topics', value: 'all' }, ...TOPICS.map(t => ({ label: t, value: t }))]
-      .map(o => ({ ...o, className: 'btn ' + (topic === o.value ? 'btn-primary' : 'btn-secondary'), onClick: () => this.setTopic(o.value) }));
-    const yearOptions = [{ label: 'All Years', value: 'all' }, ...years.map(y => ({ label: y, value: y }))]
-      .map(o => ({ ...o, className: 'btn ' + (year === o.value ? 'btn-primary' : 'btn-secondary'), onClick: () => this.setYear(o.value) }));
-
-    const pubs = filtered.map(p => ({
-      ...p,
-      href: 'paper.html?slug=' + p.slug,
-      venueClass: venueTagClass(p.venueType) + ' tag',
-      authorsHtml: { __html: this.authorsHtml(p.authors) },
-      linkChips: Object.entries(p.links || {}).map(([k, url]) => ({ url, html: { __html: this.fmt.linkChipHtml(k, LINK_LABELS[k] || k) } })),
-      topicChips: (p.topics || []).map(t => ({ label: t, className: topicTagClass(t) + ' tag' })),
-    }));
-
-    return { pubs, topicOptions, yearOptions, query, isEmpty: pubs.length === 0 };
-  }
-}
+    </section>
+    <section class="year-group" data-year>
+      <h2 class="year">2022</h2>
+      <div class="pub-list">
+        <article class="pub-card" data-topics="Neuromarketing|Neuroscience">
+          <p class="pub-meta"><span class="venue">IEEE Access</span><span class="topic">Neuromarketing</span><span class="topic">Neuroscience</span></p>
+          <h3 class="pub-title">Discrimination of Customers Decision-Making in a Like/Dislike Shopping Activity Based on Genders: A Neuromarketing Study</h3>
+          <p class="authors"><strong>Atefe Hassani</strong>, Amin Hekmatmanesh, Ali Motie Nasrabadi</p>
+          <div class="pub-links"><a class="pub-link" href="https://ieeexplore.ieee.org/document/9867935">Paper</a><a class="pub-link" href="https://doi.org/10.1109/ACCESS.2022.3201488">DOI</a></div>
+        </article>
+      </div>
+    </section>
+    <section class="year-group" data-year>
+      <h2 class="year">2019</h2>
+      <div class="pub-list">
+        <article class="pub-card" data-topics="Signal Processing">
+          <p class="pub-meta"><span class="venue">Signal, Image and Video Processing</span><span class="topic">Signal Processing</span></p>
+          <h3 class="pub-title">Improved PPG-based estimation of the blood pressure using latent space features</h3>
+          <p class="authors"><strong>Atefe Hassani</strong>, Amir Hossein Foruzan</p>
+          <div class="pub-links"><a class="pub-link" href="https://link.springer.com/article/10.1007/s11760-019-01460-1">Paper</a><a class="pub-link" href="https://doi.org/10.1007/s11760-019-01460-1">DOI</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">© 2026 Atefe Hassani</footer>
+</div>
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.pub-tab');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var topic = tab.getAttribute('data-topic');
+      tabs.forEach(function (t) { t.setAttribute('aria-pressed', t === tab ? 'true' : 'false'); });
+      document.querySelectorAll('.pub-card').forEach(function (card) {
+        var show = topic === 'all' || card.getAttribute('data-topics').split('|').indexOf(topic) !== -1;
+        card.hidden = !show;
+      });
+      document.querySelectorAll('[data-year]').forEach(function (g) {
+        g.hidden = !g.querySelector('.pub-card:not([hidden])');
+      });
+    });
+  });
+})();
 </script>
 </body>
 </html>
